@@ -1,1 +1,4 @@
+transformers[torch]
+accelerate
+
 qrcode[pil]
