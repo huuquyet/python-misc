@@ -2,3 +2,6 @@ transformers[torch]
 accelerate
 
 qrcode[pil]
+pandas
+matplotlib
+pretty_midi
