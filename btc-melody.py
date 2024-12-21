@@ -33,7 +33,7 @@ def btc_to_midi(csv_file, midi_file, time_unit=480, max_notes=128):
     prices = df['Close'].values.reshape(-1, 1)
 
     # Normalize prices to the MIDI note range
-    scaler = MinMaxScaler(feature_range=(0, max_notes - 1))  # Subtract 1 for 0-based indexing
+    scaler = MinMaxScaler(feature_range=(31, max_notes - 1))  # Subtract 1 for 0-based indexing
     normalized_prices = scaler.fit_transform(prices).astype(int)
 
     mid = MidiFile()
@@ -55,9 +55,9 @@ def btc_to_midi(csv_file, midi_file, time_unit=480, max_notes=128):
         velocity = 64 #default velocity
         duration = time_unit #default duration
         if i < len(normalized_vels):
-          velocity = normalized_vels[i]
+          velocity = normalized_vels[i][0]
         if i < len(normalized_diffs):
-          duration = normalized_diffs[i]
+          duration = int(normalized_diffs[i][0] * 0.6)
         track.append(Message('note_on', note=note, velocity=velocity, time=current_time))
         current_time = duration
         track.append(Message('note_off', note=note, velocity=velocity, time=duration))
