@@ -1,71 +1,75 @@
 import pandas as pd
-from datetime import datetime, timezone, timedelta
-import calendar
-import matplotlib.pyplot as plt
 import numpy as np
-import pretty_midi
+from mido import MidiFile, MidiTrack, Message
+from sklearn.preprocessing import MinMaxScaler
 
-def get_klines_iter(symbol, interval, start, end=None, limit=1000):
-    df = pd.DataFrame()
-    if start is None:
-        print('start time must not be None')
+def btc_to_midi(csv_file, midi_file, time_unit=480, max_notes=128):
+    """
+    Converts historical BTC weekly price data to a MIDI file.
+
+    Args:
+        csv_file: Path to the CSV file containing BTC price data (Date,Close).
+        midi_file: Path to save the generated MIDI file.
+        time_unit: MIDI time unit (ticks per beat). Adjust for tempo.
+        max_notes: Maximum number of MIDI notes available (0-127).
+    """
+
+    try:
+        df = pd.read_csv(csv_file, index_col='Date', parse_dates=True)
+    except FileNotFoundError:
+        print(f"Error: CSV file '{csv_file}' not found.")
         return
-    start = calendar.timegm(datetime.fromisoformat(start).timetuple()) * 1000
-    if end is None:
-        dt = datetime.now(timezone.utc)
-        utc_time = dt.replace(tzinfo=timezone.utc)
-        end = int(utc_time.timestamp()) * 1000
-    else:
-        end = calendar.timegm(datetime.fromisoformat(end).timetuple()) * 1000
-    last_time = None
-    while len(df) == 0 or (last_time is not None and last_time < end):
-        url = 'https://api.binance.com/api/v3/klines?symbol=' + \
-              symbol + '&interval=' + interval + '&limit=1000'
-        if len(df) == 0:
-            url += '&startTime=' + str(start)
-        else:
-            url += '&startTime=' + str(last_time)
-        url += '&endTime=' + str(end)
-        df2 = pd.read_json(url)
-        df2.columns = ['Opentime', 'Open', 'High', 'Low', 'Close', 'Volume', 'Closetime',
-                       'Quote asset volume', 'Number of trades', 'Taker by base', 'Taker buy quote', 'Ignore']
-        dftmp = pd.DataFrame()
-        dftmp = pd.concat([df2, dftmp], axis=0, ignore_index=True, keys=None)
-        dftmp.Opentime = pd.to_datetime(dftmp.Opentime, unit='ms')
-        dftmp['Date'] = dftmp.Opentime.dt.strftime("%d/%m/%Y")
-        dftmp['Time'] = dftmp.Opentime.dt.strftime("%H:%M:%S")
-        dftmp = dftmp.drop(['Quote asset volume', 'Closetime', 'Opentime',
-                            'Number of trades', 'Taker by base', 'Taker buy quote', 'Ignore'], axis=1)
-        column_names = ["Date", "Time", "Open", "High", "Low", "Close", "Volume"]
-        dftmp.reset_index(drop=True, inplace=True)
-        dftmp = dftmp.reindex(columns=column_names)
-        string_dt = str(dftmp['Date'][len(dftmp) - 1]) + 'T' + str(dftmp['Time'][len(dftmp) - 1]) + '.000Z'
-        utc_last_time = datetime.strptime(string_dt, "%d/%m/%YT%H:%M:%S.%fZ")
-        last_time = (utc_last_time - datetime(1970, 1, 1)) // timedelta(milliseconds=1)
-        df = pd.concat([df, dftmp], axis=0, ignore_index=True, keys=None)
-    return df
+    except pd.errors.ParserError:
+        print(f"Error: Could not parse CSV file. Check format (Date,Close).")
+        return
+    except KeyError:
+        print(f"Error: CSV file must have 'Date' and 'Close' columns.")
+        return
 
-# Load BTC price data
-btc_data = get_klines_iter('BTCUSDT', '1w', '2017-01-01', '2024-12-16')
+    if df.empty:
+      print("Error: CSV file is empty.")
+      return
 
-# Normalize the data to a range of 0-1
-btc_data['Close'] = btc_data['Close'].astype(float)
-normalized_data = (btc_data['Close'] - btc_data['Close'].min()) / (btc_data['Close'].max() - btc_data['Close'].min())
+    prices = df['Close'].values.reshape(-1, 1)
 
-# Create a piano roll
-piano_roll = np.zeros((128, len(normalized_data)))
+    # Normalize prices to the MIDI note range
+    scaler = MinMaxScaler(feature_range=(0, max_notes - 1))  # Subtract 1 for 0-based indexing
+    normalized_prices = scaler.fit_transform(prices).astype(int)
 
-# Map normalized data to MIDI notes
-for i, price in enumerate(normalized_data):
-    midi_note = int(price * 127)  # Map to MIDI note range
-    piano_roll[midi_note, i] = 1
+    mid = MidiFile()
+    track = MidiTrack()
+    mid.tracks.append(track)
 
-# Create a MIDI object
-midi_object = pretty_midi.PrettyMIDI()
-# Create a MIDI instrument and add it to the MIDI object
-piano = pretty_midi.Instrument(program=pretty_midi.instrument_name_to_program('Acoustic Grand Piano'))
-piano.notes = pretty_midi.utilities.piano_roll_to_notes(piano_roll) 
-midi_object.instruments.append(piano)
+    # Calculate price differences for note durations and velocities
+    price_diffs = np.diff(prices.flatten())
+    # Scale differences for durations and velocities
+    diff_scaler = MinMaxScaler(feature_range=(time_unit // 4, time_unit)) #min duration is a quarter note
+    normalized_diffs = diff_scaler.fit_transform(price_diffs.reshape(-1, 1)).astype(int)
+    vel_scaler = MinMaxScaler(feature_range=(64, 127)) # Velocity range 64-127
+    normalized_vels = vel_scaler.fit_transform(price_diffs.reshape(-1, 1)).astype(int)
 
-# Save the MIDI file
-midi_object.write('btc_melody.mid')
+
+    # Add note on/off events
+    current_time = 0
+    for i, note in enumerate(normalized_prices.flatten()):
+        velocity = 64 #default velocity
+        duration = time_unit #default duration
+        if i < len(normalized_vels):
+          velocity = normalized_vels[i]
+        if i < len(normalized_diffs):
+          duration = normalized_diffs[i]
+        track.append(Message('note_on', note=note, velocity=velocity, time=current_time))
+        current_time = duration
+        track.append(Message('note_off', note=note, velocity=velocity, time=duration))
+        current_time = 0
+
+    try:
+        mid.save(midi_file)
+        print(f"MIDI file saved to '{midi_file}'")
+    except Exception as e: #catch potential saving errors
+        print(f"Error saving MIDI file: {e}")
+
+# Example usage (replace with your actual file paths)
+btc_csv = 'btc-price-binance.csv'  # CSV file with Date and Close columns
+output_midi = 'btc_music.mid'
+btc_to_midi(btc_csv, output_midi)

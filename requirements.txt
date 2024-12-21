@@ -3,5 +3,5 @@ accelerate
 
 qrcode[pil]
 pandas
-matplotlib
-pretty_midi
+mido
+scikit-learn

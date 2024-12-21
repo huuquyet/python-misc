@@ -43,16 +43,16 @@ def get_klines_iter(symbol, interval, start, end = None, limit=1000):
         dftmp = pd.concat([df2, dftmp], axis=0, ignore_index=True, keys=None)
 
         dftmp.Opentime = pd.to_datetime(dftmp.Opentime, unit='ms')
-        dftmp['Date'] = dftmp.Opentime.dt.strftime("%d/%m/%Y")
+        dftmp['Date'] = dftmp.Opentime.dt.strftime("%Y-%m-%d")
         dftmp['Time'] = dftmp.Opentime.dt.strftime("%H:%M:%S")
         dftmp = dftmp.drop(['Quote asset volume', 'Closetime', 'Opentime',
                       'Number of trades', 'Taker by base', 'Taker buy quote', 'Ignore'], axis=1)
         column_names = ["Date", "Time", "Open", "High", "Low", "Close", "Volume"]
         dftmp.reset_index(drop=True, inplace=True)
         dftmp = dftmp.reindex(columns=column_names)
-        string_dt = str(dftmp['Date'][len(dftmp) - 1]) + 'T' + str(dftmp['Time'][len(dftmp) - 1]) + '.000Z'
-        utc_last_time = datetime.strptime(string_dt, "%d/%m/%YT%H:%M:%S.%fZ")
+        string_dt = str(dftmp['Date'][len(dftmp) - 1]) + ' ' + str(dftmp['Time'][len(dftmp) - 1]) + '.000Z'
+        utc_last_time = datetime.strptime(string_dt, "%Y-%m-%d %H:%M:%S.%fZ")
         last_time = (utc_last_time - datetime(1970, 1, 1)) // timedelta(milliseconds=1)
         df = pd.concat([df, dftmp], axis=0, ignore_index=True, keys=None)
-    df.to_csv('btc-price-binance.csv', sep='\t', index=False)
+    df.to_csv('btc-price-binance.csv', sep=',', index=False)
 get_klines_iter('BTCUSDT', '1w', '2017-01-01', '2024-12-16')
