@@ -50,9 +50,9 @@ def get_klines_iter(symbol, interval, start, end = None, limit=1000):
         column_names = ["Date", "Time", "Open", "High", "Low", "Close", "Volume"]
         dftmp.reset_index(drop=True, inplace=True)
         dftmp = dftmp.reindex(columns=column_names)
-        string_dt = str(dftmp['Date'][len(dftmp) - 1]) + ' ' + str(dftmp['Time'][len(dftmp) - 1]) + '.000Z'
-        utc_last_time = datetime.strptime(string_dt, "%Y-%m-%d %H:%M:%S.%fZ")
+        string_dt = str(dftmp['Date'][len(dftmp) - 1]) + 'T' + str(dftmp['Time'][len(dftmp) - 1]) + '.000Z'
+        utc_last_time = datetime.strptime(string_dt, "%Y-%m-%dT%H:%M:%S.%fZ")
         last_time = (utc_last_time - datetime(1970, 1, 1)) // timedelta(milliseconds=1)
         df = pd.concat([df, dftmp], axis=0, ignore_index=True, keys=None)
     df.to_csv('btc-price-binance.csv', sep=',', index=False)
-get_klines_iter('BTCUSDT', '1w', '2017-01-01', '2024-12-16')
+get_klines_iter('BTCUSDT', '1w', '2017-01-01', '2024-12-23')
