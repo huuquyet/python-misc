@@ -70,6 +70,6 @@ def btc_to_midi(csv_file, midi_file, time_unit=480, max_notes=128):
         print(f"Error saving MIDI file: {e}")
 
 # Example usage (replace with your actual file paths)
-btc_csv = 'btc-price-hourly.csv'  # CSV file with Date and Close columns
-output_midi = 'btc-midi-hourly.mid'
+btc_csv = 'btc-price-hourly-20250111.csv'  # CSV file with Date and Close columns
+output_midi = 'btc-midi-hourly-20250111.mid'
 btc_to_midi(btc_csv, output_midi)

@@ -54,5 +54,5 @@ def get_klines_iter(symbol, interval, start, end = None, limit=1000):
         utc_last_time = datetime.strptime(string_dt, "%Y-%m-%dT%H:%M:%S.%fZ")
         last_time = (utc_last_time - datetime(1970, 1, 1)) // timedelta(milliseconds=1)
         df = pd.concat([df, dftmp], axis=0, ignore_index=True, keys=None)
-    df.to_csv('btc-price-hourly.csv', sep=',', index=False)
-get_klines_iter('BTCUSDT', '1h', '2024-11-14')
+    df.to_csv('btc-price-hourly-20250111.csv', sep=',', index=False)
+get_klines_iter('BTCUSDT', '1h', '2024-12-01', '2025-01-11')
