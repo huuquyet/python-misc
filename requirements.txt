@@ -1,6 +1,9 @@
 transformers[torch]
 accelerate
 
+numpy
+matplotlib
+
 qrcode[pil]
 pandas
 mido
