@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Tic-Tac-Toe</title>
+    <title>3D Tic-Tac-Toe Matrix V2</title>
     <style>
         body {
             margin: 0;
@@ -11,6 +11,7 @@
             background-color: #0f0f11;
             font-family: monospace;
             color: white;
+            user-select: none;
         }
         #ui {
             position: absolute;
@@ -21,39 +22,67 @@
         }
         h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 22px;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
         #status {
             font-size: 18px;
             margin-top: 10px;
-            color: #00ffcc;
+            color: #ff3333;
+            font-weight: bold;
         }
-        #controls-info {
+        #controls-panel {
             position: absolute;
             bottom: 20px;
             width: 100%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        button {
+            background: #1a1a24;
+            color: white;
+            border: 1px solid #444;
+            padding: 10px 20px;
+            font-family: monospace;
             font-size: 14px;
-            color: #888;
-            pointer-events: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #00ffcc;
+            color: #000;
+            border-color: #00ffcc;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+        }
+        button:disabled {
+            background: #0f0f13;
+            color: #444;
+            border-color: #222;
+            cursor: not-allowed;
+            box-shadow: none;
         }
     </style>
-    <!-- Load Three.js and OrbitControls -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
 
     <div id="ui">
-        <h1>3D Tic-Tac-Toe Matrix</h1>
-        <div id="status">Player 1's Turn (Red)</div>
+        <h1>3D Matrix: 3-Player System</h1>
+        <div id="status">Your Turn (Red)</div>
     </div>
-    <div id="controls-info">Left Click: Place Move | Left Click + Drag: Rotate Camera | Scroll: Zoom</div>
+
+    <div id="controls-panel">
+        <button id="undo-btn" onclick="undo()">Undo</button>
+        <button id="redo-btn" onclick="redo()">Redo</button>
+        <button id="reset-btn" onclick="resetGame()" style="display:none;">Play Again</button>
+    </div>
 
     <script>
-        // --- 1. Scene Setup ---
+        // --- 1. System Setups ---
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.set(6, 6, 8);
@@ -65,139 +94,274 @@
         const controls = new THREE.OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
 
-        // Lighting
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-        scene.add(ambientLight);
+        scene.add(new THREE.AmbientLight(0xffffff, 0.6));
         const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
         dirLight.position.set(10, 20, 10);
         scene.add(dirLight);
 
-        // --- 2. Game Logic & Grid Generation ---
-        const board = new Array(27).fill(0); // 0: empty, 1: P1(Red), 2: P2(Blue)
-        const cubes = [];
-        let currentPlayer = 1;
+        // --- 2. State & Geometry Setup ---
+        let board = new Array(27).fill(0); 
+        let currentPlayer = 1; // 1: You (Red), 2: Bot A (Blue), 3: Bot B (Green)
         let gameActive = true;
+        const cubes = [];
+        
+        // History Trackers for Undo/Redo
+        let historyStack = [];
+        let redoStack = [];
 
-        const spacing = 1.3;
-        const geometry = new THREE.BoxGeometry(0.9, 0.9, 0.9);
+        const spacing = 1.4;
+        // Reduced geometry size from 0.9 down to 0.45 for much easier spatial selection
+        const geometry = new THREE.BoxGeometry(0.45, 0.45, 0.45);
         const edgesGeometry = new THREE.EdgesGeometry(geometry);
 
-        // Generate the 3x3x3 Matrix
-        for (let x = 0; x < 3; x++) {
+        for (let z = 0; z < 3; z++) {
             for (let y = 0; y < 3; y++) {
-                for (let z = 0; z < 3; z++) {
+                for (let x = 0; x < 3; x++) {
                     const material = new THREE.MeshPhongMaterial({
                         color: 0xffffff,
                         transparent: true,
-                        opacity: 0.1,
+                        opacity: 0.08,
                         side: THREE.DoubleSide
                     });
-
                     const cube = new THREE.Mesh(geometry, material);
-                    
-                    // Add wireframe edges for the "matrix" aesthetic
-                    const edges = new THREE.LineSegments(edgesGeometry, new THREE.LineBasicMaterial({ color: 0x444444 }));
+                    const edges = new THREE.LineSegments(edgesGeometry, new THREE.LineBasicMaterial({ color: 0x333344 }));
                     cube.add(edges);
 
-                    // Position cubes and center the grid
-                    cube.position.set(
-                        (x - 1) * spacing,
-                        (y - 1) * spacing,
-                        (z - 1) * spacing
-                    );
-
-                    // Store index data for game logic
-                    cube.userData = { index: x + y * 3 + z * 9, x, y, z };
+                    cube.position.set((x - 1) * spacing, (y - 1) * spacing, (z - 1) * spacing);
+                    cube.userData = { index: x + y * 3 + z * 9 };
                     scene.add(cube);
                     cubes.push(cube);
                 }
             }
         }
 
-        // --- 3. Interaction (Raycasting) ---
+        // Pre-calculate all 49 win trajectories across 3D planes
+        const winLines = [];
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                winLines.push([i + j * 3 + 0 * 9, i + j * 3 + 1 * 9, i + j * 3 + 2 * 9]);
+                winLines.push([i + 0 * 3 + j * 9, i + 1 * 3 + j * 9, i + 2 * 3 + j * 9]);
+                winLines.push([0 + i * 3 + j * 9, 1 + i * 3 + j * 9, 2 + i * 3 + j * 9]);
+            }
+            winLines.push([0 + i * 3 + 0 * 9, 1 + i * 3 + 1 * 9, 2 + i * 3 + 2 * 9]);
+            winLines.push([2 + i * 3 + 0 * 9, 1 + i * 3 + 1 * 9, 0 + i * 3 + 2 * 9]);
+            winLines.push([i + 0 * 3 + 0 * 9, i + 1 * 3 + 1 * 9, i + 2 * 3 + 2 * 9]);
+            winLines.push([i + 2 * 3 + 0 * 9, i + 1 * 3 + 1 * 9, i + 0 * 3 + 2 * 9]);
+            winLines.push([0 + 0 * 3 + i * 9, 1 + 1 * 3 + i * 9, 2 + 2 * 3 + i * 9]);
+            winLines.push([2 + 0 * 3 + i * 9, 1 + 1 * 3 + i * 9, 0 + 2 * 3 + i * 9]);
+        }
+        winLines.push([0 + 0 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 2 + 2 * 3 + 2 * 9]);
+        winLines.push([2 + 0 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 0 + 2 * 3 + 2 * 9]);
+        winLines.push([0 + 2 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 2 + 0 * 3 + 2 * 9]);
+        winLines.push([2 + 2 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 0 + 0 * 3 + 2 * 9]);
+
+        // --- 3. Interaction Mechanics ---
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
 
         window.addEventListener('click', onMouseClick);
 
         function onMouseClick(event) {
-            if (!gameActive) return;
+            if (!gameActive || currentPlayer !== 1) return;
 
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
             raycaster.setFromCamera(mouse, camera);
+            
             const intersects = raycaster.intersectObjects(cubes);
-
             if (intersects.length > 0) {
-                const selectedCube = intersects[0].object;
-                const index = selectedCube.userData.index;
+                const index = intersects[0].object.userData.index;
 
-                // If cell is empty
                 if (board[index] === 0) {
-                    board[index] = currentPlayer;
-                    
-                    // Update visuals
-                    selectedCube.material.opacity = 0.9;
-                    selectedCube.material.color.setHex(currentPlayer === 1 ? 0xff3333 : 0x3333ff);
-                    
-                    if (checkWin()) {
-                        document.getElementById('status').innerText = `Player ${currentPlayer} Wins!`;
-                        document.getElementById('status').style.color = currentPlayer === 1 ? '#ff3333' : '#3333ff';
-                        gameActive = false;
-                    } else if (!board.includes(0)) {
-                        document.getElementById('status').innerText = "Draw! The matrix is full.";
-                        document.getElementById('status').style.color = '#ffffff';
-                        gameActive = false;
-                    } else {
-                        currentPlayer = currentPlayer === 1 ? 2 : 1;
-                        document.getElementById('status').innerText = `Player ${currentPlayer}'s Turn (${currentPlayer === 1 ? 'Red' : 'Blue'})`;
-                        document.getElementById('status').style.color = currentPlayer === 1 ? '#ff3333' : '#3333ff';
+                    executeMove(index, 1);
+                    if (gameActive) {
+                        setTimeout(runAiTurn, 600); // Trigger Bot A
                     }
                 }
             }
         }
 
-        // --- 4. Win Logic Calculation ---
-        function checkWin() {
-            const lines = [];
+        function executeMove(index, player) {
+            // Commit deep snapshot to history
+            historyStack.push({ board: [...board], player: player });
+            redoStack = []; // Clear redo chain on new organic moves
             
-            // Generate all 49 winning lines dynamically
-            for (let i = 0; i < 3; i++) {
-                for (let j = 0; j < 3; j++) {
-                    lines.push([i + j * 3 + 0 * 9, i + j * 3 + 1 * 9, i + j * 3 + 2 * 9]); // Z axis
-                    lines.push([i + 0 * 3 + j * 9, i + 1 * 3 + j * 9, i + 2 * 3 + j * 9]); // Y axis
-                    lines.push([0 + i * 3 + j * 9, 1 + i * 3 + j * 9, 2 + i * 3 + j * 9]); // X axis
-                }
-                // 2D Face Diagonals
-                lines.push([0 + i * 3 + 0 * 9, 1 + i * 3 + 1 * 9, 2 + i * 3 + 2 * 9]); 
-                lines.push([2 + i * 3 + 0 * 9, 1 + i * 3 + 1 * 9, 0 + i * 3 + 2 * 9]); 
-                lines.push([i + 0 * 3 + 0 * 9, i + 1 * 3 + 1 * 9, i + 2 * 3 + 2 * 9]); 
-                lines.push([i + 2 * 3 + 0 * 9, i + 1 * 3 + 1 * 9, i + 0 * 3 + 2 * 9]); 
-                lines.push([0 + 0 * 3 + i * 9, 1 + 1 * 3 + i * 9, 2 + 2 * 3 + i * 9]); 
-                lines.push([2 + 0 * 3 + i * 9, 1 + 1 * 3 + i * 9, 0 + 2 * 3 + i * 9]); 
-            }
-            // 3D Space Diagonals (Corner to opposite corner through the center)
-            lines.push([0 + 0 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 2 + 2 * 3 + 2 * 9]);
-            lines.push([2 + 0 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 0 + 2 * 3 + 2 * 9]);
-            lines.push([0 + 2 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 2 + 0 * 3 + 2 * 9]);
-            lines.push([2 + 2 * 3 + 0 * 9, 1 + 1 * 3 + 1 * 9, 0 + 0 * 3 + 2 * 9]);
+            board[index] = player;
+            updateCubeVisual(index, player);
+            updateUiState();
 
-            // Check if any line has 3 matching player stones
-            for (let line of lines) {
+            if (checkWinConditions()) return;
+            
+            // Advance player rotation
+            currentPlayer = currentPlayer === 3 ? 1 : currentPlayer + 1;
+            updateUiState();
+            updateButtonStates();
+        }
+
+        // --- 4. The Artificial Intelligence Engines ---
+        function runAiTurn() {
+            if (!gameActive) return;
+
+            let targetIndex = evaluateBestMove(currentPlayer);
+            
+            executeMove(targetIndex, currentPlayer);
+
+            // Chain to next agent if it's Bot B's turn
+            if (gameActive && currentPlayer !== 1) {
+                setTimeout(runAiTurn, 600);
+            }
+        }
+
+        function evaluateBestMove(aiPlayer) {
+            let opponents = [1, 2, 3].filter(p => p !== aiPlayer);
+
+            // Level 1 Priority: Look for immediate win path
+            for (let line of winLines) {
+                let aiCount = line.filter(idx => board[idx] === aiPlayer).length;
+                let emptyCount = line.filter(idx => board[idx] === 0).length;
+                if (aiCount === 2 && emptyCount === 1) {
+                    return line.find(idx => board[idx] === 0);
+                }
+            }
+
+            // Level 2 Priority: Block an imminent opponent win condition
+            for (let opponent of opponents) {
+                for (let line of winLines) {
+                    let oppCount = line.filter(idx => board[idx] === opponent).length;
+                    let emptyCount = line.filter(idx => board[idx] === 0).length;
+                    if (oppCount === 2 && emptyCount === 1) {
+                        return line.find(idx => board[idx] === 0);
+                    }
+                }
+            }
+
+            // Level 3 Priority: Build out own multi-point vectors
+            for (let line of winLines) {
+                let aiCount = line.filter(idx => board[idx] === aiPlayer).length;
+                let emptyCount = line.filter(idx => board[idx] === 0).length;
+                if (aiCount === 1 && emptyCount === 2) {
+                    return line.find(idx => board[idx] === 0);
+                }
+            }
+
+            // Fallback: Default to central nodes or random empty fields
+            let preferences = [13, 4, 12, 14, 22, 10, 16, 0, 2, 6, 8, 18, 20, 24, 26];
+            for (let idx of preferences) {
+                if (board[idx] === 0) return idx;
+            }
+
+            let available = board.map((val, idx) => val === 0 ? idx : null).filter(val => val !== null);
+            return available[Math.floor(Math.random() * available.length)];
+        }
+
+        // --- 5. Validations & Refreshes ---
+        function checkWinConditions() {
+            for (let line of winLines) {
                 const [a, b, c] = line;
                 if (board[a] !== 0 && board[a] === board[b] && board[a] === board[c]) {
-                    // Highlight the winning line
-                    cubes[a].scale.set(1.2, 1.2, 1.2);
-                    cubes[b].scale.set(1.2, 1.2, 1.2);
-                    cubes[c].scale.set(1.2, 1.2, 1.2);
+                    gameActive = false;
+                    highlightWinningVector(line);
+                    
+                    let winnerText = board[a] === 1 ? "You Win!" : `Bot ${board[a] === 2 ? 'A' : 'B'} Wins!`;
+                    document.getElementById('status').innerText = winnerText;
+                    document.getElementById('reset-btn').style.display = 'inline-block';
                     return true;
                 }
+            }
+            if (!board.includes(0)) {
+                gameActive = false;
+                document.getElementById('status').innerText = "Stalemate. System Full.";
+                document.getElementById('status').style.color = '#ffffff';
+                document.getElementById('reset-btn').style.display = 'inline-block';
+                return true;
             }
             return false;
         }
 
-        // --- 5. Render Loop ---
+        function highlightWinningVector(line) {
+            line.forEach(idx => {
+                cubes[idx].scale.set(1.5, 1.5, 1.5);
+            });
+        }
+
+        function updateCubeVisual(index, player) {
+            let colors = { 0: 0xffffff, 1: 0xff3333, 2: 0x3333ff, 3: 0x33ff33 };
+            cubes[index].material.color.setHex(colors[player]);
+            cubes[index].material.opacity = player === 0 ? 0.08 : 0.85;
+            if (player === 0) cubes[index].scale.set(1, 1, 1);
+        }
+
+        function updateUiState() {
+            if (!gameActive) return;
+            let status = document.getElementById('status');
+            if (currentPlayer === 1) {
+                status.innerText = "Your Turn (Red)";
+                status.style.color = "#ff3333";
+            } else if (currentPlayer === 2) {
+                status.innerText = "Bot A Analyzing... (Blue)";
+                status.style.color = "#3333ff";
+            } else {
+                status.innerText = "Bot B Analyzing... (Green)";
+                status.style.color = "#33ff33";
+            }
+        }
+
+        // --- 6. Time-Travel Engine (Undo / Redo) ---
+        function undo() {
+            if (historyStack.length === 0 || !gameActive) return;
+            
+            // Capture current state to shift into Redo memory space
+            redoStack.push({ board: [...board], player: currentPlayer });
+            
+            let previousState = historyStack.pop();
+            board = previousState.board;
+            currentPlayer = previousState.player;
+
+            // Re-render structural state matching index history
+            board.forEach((val, idx) => updateCubeVisual(idx, val));
+            
+            updateUiState();
+            updateButtonStates();
+            
+            // If you undo an AI's turn, automatically trigger a step back so it returns to the human input phase
+            if (currentPlayer !== 1 && historyStack.length > 0) {
+                undo();
+            }
+        }
+
+        function redo() {
+            if (redoStack.length === 0 || !gameActive) return;
+
+            historyStack.push({ board: [...board], player: currentPlayer });
+            
+            let nextState = redoStack.pop();
+            board = nextState.board;
+            currentPlayer = nextState.player;
+
+            board.forEach((val, idx) => updateCubeVisual(idx, val));
+            
+            updateUiState();
+            updateButtonStates();
+        }
+
+        function updateButtonStates() {
+            document.getElementById('undo-btn').disabled = (historyStack.length === 0);
+            document.getElementById('redo-btn').disabled = (redoStack.length === 0);
+        }
+
+        function resetGame() {
+            board.fill(0);
+            board.forEach((val, idx) => updateCubeVisual(idx, val));
+            historyStack = [];
+            redoStack = [];
+            currentPlayer = 1;
+            gameActive = true;
+            document.getElementById('reset-btn').style.display = 'none';
+            updateUiState();
+            updateButtonStates();
+        }
+
+        // --- 7. Event Handlers & Core Loop ---
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
@@ -206,9 +370,11 @@
 
         function animate() {
             requestAnimationFrame(animate);
-            controls.update(); // Required for OrbitControls damping
+            controls.update();
             renderer.render(scene, camera);
         }
+        
+        updateButtonStates();
         animate();
     </script>
 </body>
