@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Tic-Tac-Toe Matrix V2</title>
+    <title>4x4x4 3D Matrix Game</title>
     <style>
         body {
             margin: 0;
@@ -15,7 +15,7 @@
         }
         #ui {
             position: absolute;
-            top: 20px;
+            top: 15px;
             width: 100%;
             text-align: center;
             pointer-events: none;
@@ -27,31 +27,54 @@
             text-transform: uppercase;
         }
         #status {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 16px;
+            margin-top: 8px;
             color: #ff3333;
             font-weight: bold;
         }
+        #top-controls {
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            pointer-events: auto;
+        }
+        #leaderboard {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(20, 20, 30, 0.85);
+            border: 1px solid #333;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 12px;
+            min-width: 150px;
+        }
+        #leaderboard h3 { margin: 0 0 5px 0; font-size: 13px; color: #00ffcc; text-transform: uppercase;}
+        .score-row { display: flex; justify-content: space-between; margin: 3px 0; }
+        
         #controls-panel {
             position: absolute;
             bottom: 20px;
             width: 100%;
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
         }
-        button {
+        button, select {
             background: #1a1a24;
             color: white;
             border: 1px solid #444;
-            padding: 10px 20px;
+            padding: 8px 16px;
             font-family: monospace;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
             transition: all 0.2s ease;
             border-radius: 4px;
         }
-        button:hover {
+        button:hover, select:hover {
             background: #00ffcc;
             color: #000;
             border-color: #00ffcc;
@@ -71,21 +94,35 @@
 <body>
 
     <div id="ui">
-        <h1>3D Matrix: 2-Player System</h1>
+        <h1>4x4x4 Hyper-Matrix</h1>
         <div id="status">Your Turn (Red)</div>
+    </div>
+
+    <div id="top-controls">
+        <label style="line-height: 30px; font-size: 12px;">Mode: </label>
+        <select id="player-count-select" onchange="changePlayerCount(this.value)">
+            <option value="2">2 Players (You vs Bot A)</option>
+            <option value="3" selected>3 Players (You vs 2 Bots)</option>
+            <option value="4">4 Players (You vs 3 Bots)</option>
+        </select>
+    </div>
+
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <div id="scores-container"></div>
     </div>
 
     <div id="controls-panel">
         <button id="undo-btn" onclick="undo()">Undo</button>
         <button id="redo-btn" onclick="redo()">Redo</button>
-        <button id="reset-btn" onclick="resetGame()" style="display:none;">Play Again</button>
+        <button id="reset-btn" onclick="resetGame()">Reset Game</button>
     </div>
 
     <script>
-        // --- 1. System Setups ---
+        // --- 1. System Setup ---
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(6, 6, 8);
+        camera.position.set(9, 9, 12);
 
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -99,21 +136,21 @@
         dirLight.position.set(10, 20, 10);
         scene.add(dirLight);
 
-        // --- 2. State & Geometry Setup ---
+        // --- 2. State & Dynamic Settings ---
+        let maxPlayers = 3; 
         let board = new Array(64).fill(0); 
-        let currentPlayer = 1; // 1: You (Red), 2: Bot A (Blue), 3: Bot B (Green)
+        let currentPlayer = 1; // 1: You (Red), 2: Bot A (Blue), 3: Bot B (Green), 4: Bot C (Yellow)
         let gameActive = true;
         const cubes = [];
         
-        // History Trackers for Undo/Redo
         let historyStack = [];
         let redoStack = [];
 
-        const spacing = 1.4;
-        // Reduced geometry size from 0.9 down to 0.45 for much easier spatial selection
-        const geometry = new THREE.BoxGeometry(0.45, 0.45, 0.45);
+        const spacing = 1.3;
+        const geometry = new THREE.BoxGeometry(0.38, 0.38, 0.38);
         const edgesGeometry = new THREE.EdgesGeometry(geometry);
 
+        // Construct 4x4x4 Mesh Grid
         for (let z = 0; z < 4; z++) {
             for (let y = 0; y < 4; y++) {
                 for (let x = 0; x < 4; x++) {
@@ -127,7 +164,7 @@
                     const edges = new THREE.LineSegments(edgesGeometry, new THREE.LineBasicMaterial({ color: 0x333344 }));
                     cube.add(edges);
 
-                    cube.position.set((x - 1) * spacing, (y - 1) * spacing, (z - 1) * spacing);
+                    cube.position.set((x - 1.5) * spacing, (y - 1.5) * spacing, (z - 1.5) * spacing);
                     cube.userData = { index: x + y * 4 + z * 16 };
                     scene.add(cube);
                     cubes.push(cube);
@@ -135,7 +172,7 @@
             }
         }
 
-        // Pre-calculate all 76 win trajectories across 3D planes
+        // Generate all 76 Trajectories
         const winLines = [];
         for (let i = 0; i < 4; i++) {
             for (let j = 0; j < 4; j++) {
@@ -155,7 +192,7 @@
         winLines.push([0 + 3 * 4 + 0 * 16, 1 + 2 * 4 + 1 * 16, 2 + 1 * 4 + 2 * 16, 3 + 0 * 4 + 3 * 16]);
         winLines.push([3 + 3 * 4 + 0 * 16, 2 + 2 * 4 + 1 * 16, 1 + 1 * 4 + 2 * 16, 0 + 0 * 4 + 3 * 16]);
 
-        // --- 3. Interaction Mechanics ---
+        // --- 3. Player & AI Execution Engine ---
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
 
@@ -171,82 +208,73 @@
             const intersects = raycaster.intersectObjects(cubes);
             if (intersects.length > 0) {
                 const index = intersects[0].object.userData.index;
-
                 if (board[index] === 0) {
                     executeMove(index, 1);
-                    if (gameActive) {
-                        setTimeout(runAiTurn, 600); // Trigger Bot A
+                    if (gameActive && currentPlayer !== 1) {
+                        setTimeout(runAiTurn, 500);
                     }
                 }
             }
         }
 
         function executeMove(index, player) {
-            // Commit deep snapshot to history
             historyStack.push({ board: [...board], player: player });
-            redoStack = []; // Clear redo chain on new organic moves
+            redoStack = [];
             
             board[index] = player;
             updateCubeVisual(index, player);
-            updateUiState();
 
             if (checkWinConditions()) return;
             
-            // Advance player rotation
-            currentPlayer = currentPlayer === 2 ? 1 : currentPlayer + 1; // 2 players
+            currentPlayer = currentPlayer >= maxPlayers ? 1 : currentPlayer + 1;
             updateUiState();
             updateButtonStates();
         }
 
-        // --- 4. The Artificial Intelligence Engines ---
         function runAiTurn() {
             if (!gameActive) return;
 
-            let targetIndex = evaluateBestMove(currentPlayer);
-            
+            let targetIndex = evaluateBestMove4x4(currentPlayer);
             executeMove(targetIndex, currentPlayer);
 
-            // Chain to next agent if it's Bot B's turn
             if (gameActive && currentPlayer !== 1) {
-                setTimeout(runAiTurn, 600);
+                setTimeout(runAiTurn, 500);
             }
         }
 
-        function evaluateBestMove(aiPlayer) {
-            let opponents = [1, 2].filter(p => p !== aiPlayer); // [1, 2, 3] 2 players
+        function evaluateBestMove4x4(aiPlayer) {
+            let opponents = Array.from({length: maxPlayers}, (_, i) => i + 1).filter(p => p !== aiPlayer);
 
-            // Level 1 Priority: Look for immediate win path
+            // Priority 1: Check Imminent AI Victory (3 marked, 1 empty)
             for (let line of winLines) {
                 let aiCount = line.filter(idx => board[idx] === aiPlayer).length;
                 let emptyCount = line.filter(idx => board[idx] === 0).length;
-                if (aiCount === 2 && emptyCount === 1) { // bug, need update
-                    return line.find(idx => board[idx] === 0);
-                }
+                if (aiCount === 3 && emptyCount === 1) return line.find(idx => board[idx] === 0);
             }
 
-            // Level 2 Priority: Block an imminent opponent win condition
+            // Priority 2: Block Imminent Opponent Victory
             for (let opponent of opponents) {
                 for (let line of winLines) {
                     let oppCount = line.filter(idx => board[idx] === opponent).length;
                     let emptyCount = line.filter(idx => board[idx] === 0).length;
-                    if (oppCount === 2 && emptyCount === 1) {
-                        return line.find(idx => board[idx] === 0);
-                    }
+                    if (oppCount === 3 && emptyCount === 1) return line.find(idx => board[idx] === 0);
                 }
             }
 
-            // Level 3 Priority: Build out own multi-point vectors
+            // Priority 3: Strategic Setup (2 marked, 2 empty)
             for (let line of winLines) {
                 let aiCount = line.filter(idx => board[idx] === aiPlayer).length;
                 let emptyCount = line.filter(idx => board[idx] === 0).length;
-                if (aiCount === 1 && emptyCount === 2) {
-                    return line.find(idx => board[idx] === 0);
-                }
+                if (aiCount === 2 && emptyCount === 2) return line.find(idx => board[idx] === 0);
             }
 
-            // Fallback: Default to central nodes or random empty fields
-            let preferences = [13, 4, 12, 14, 22, 10, 16, 0, 2, 6, 8, 18, 20, 24, 26]; // 3x3x3 mode, need update
-            for (let idx of preferences) {
+            // Priority 4: Corrected 4x4x4 Fallback Preference (Core -> Corners -> Center-Faces -> Edges)
+            let coreInner = [21, 22, 25, 26, 37, 38, 41, 42];
+            let corners = [0, 3, 12, 15, 48, 51, 60, 63];
+            let centerFaces = [5, 6, 9, 10, 17, 18, 29, 30, 33, 34, 45, 46, 20, 23, 24, 27, 36, 39, 40, 43];
+            
+            let combinedPref = [...coreInner, ...corners, ...centerFaces];
+            for (let idx of combinedPref) {
                 if (board[idx] === 0) return idx;
             }
 
@@ -254,7 +282,7 @@
             return available[Math.floor(Math.random() * available.length)];
         }
 
-        // --- 5. Validations & Refreshes ---
+        // --- 4. Validation & Local Storage Integration ---
         function checkWinConditions() {
             for (let line of winLines) {
                 const [a, b, c, d] = line;
@@ -262,9 +290,11 @@
                     gameActive = false;
                     highlightWinningVector(line);
                     
-                    let winnerText = board[a] === 1 ? "You Win!" : `Bot ${board[a] === 2 ? 'A' : 'B'} Wins!`;
-                    document.getElementById('status').innerText = winnerText;
-                    document.getElementById('reset-btn').style.display = 'inline-block';
+                    let winner = board[a];
+                    let winnerName = winner === 1 ? "You" : `Bot ${String.fromCharCode(64 + winner - 1)}`;
+                    
+                    document.getElementById('status').innerText = `${winnerName} Won!`;
+                    recordWinInLocalStorage(winnerName);
                     return true;
                 }
             }
@@ -272,20 +302,39 @@
                 gameActive = false;
                 document.getElementById('status').innerText = "Stalemate. System Full.";
                 document.getElementById('status').style.color = '#ffffff';
-                document.getElementById('reset-btn').style.display = 'inline-block';
                 return true;
             }
             return false;
         }
 
+        function recordWinInLocalStorage(winnerName) {
+            let stats = JSON.parse(localStorage.getItem('3d_tictactoe_scores') || '{}');
+            stats[winnerName] = (stats[winnerName] || 0) + 1;
+            localStorage.setItem('3d_tictactoe_scores', JSON.stringify(stats));
+            renderLeaderboard();
+        }
+
+        function renderLeaderboard() {
+            let stats = JSON.parse(localStorage.getItem('3d_tictactoe_scores') || '{}');
+            let container = document.getElementById('scores-container');
+            container.innerHTML = '';
+            
+            if (Object.keys(stats).length === 0) {
+                container.innerHTML = '<div style="color:#666">No games played</div>';
+                return;
+            }
+
+            for (let [player, wins] of Object.entries(stats)) {
+                container.innerHTML += `<div class="score-row"><span>${player}</span><strong style="color:#00ffcc">${wins}</strong></div>`;
+            }
+        }
+
         function highlightWinningVector(line) {
-            line.forEach(idx => {
-                cubes[idx].scale.set(1.5, 1.5, 1.5);
-            });
+            line.forEach(idx => cubes[idx].scale.set(1.4, 1.4, 1.4));
         }
 
         function updateCubeVisual(index, player) {
-            let colors = { 0: 0xffffff, 1: 0xff3333, 2: 0x3333ff, 3: 0x33ff33 };
+            let colors = { 0: 0xffffff, 1: 0xff3333, 2: 0x3333ff, 3: 0x33ff33, 4: 0xffff33 };
             cubes[index].material.color.setHex(colors[player]);
             cubes[index].material.opacity = player === 0 ? 0.08 : 0.85;
             if (player === 0) cubes[index].scale.set(1, 1, 1);
@@ -294,44 +343,36 @@
         function updateUiState() {
             if (!gameActive) return;
             let status = document.getElementById('status');
-            if (currentPlayer === 1) {
-                status.innerText = "Your Turn (Red)";
-                status.style.color = "#ff3333";
-            } else if (currentPlayer === 2) {
-                status.innerText = "Bot A Analyzing... (Blue)";
-                status.style.color = "#3333ff";
-            } else {
-                status.innerText = "Bot B Analyzing... (Green)";
-                status.style.color = "#33ff33";
-            }
+            let colorMap = { 1: "#ff3333", 2: "#3333ff", 3: "#33ff33", 4: "#ffff33" };
+            let nameMap = { 1: "Your Turn (Red)", 2: "Bot A Analyzing... (Blue)", 3: "Bot B Analyzing... (Green)", 4: "Bot C Analyzing... (Yellow)" };
+            
+            status.innerText = nameMap[currentPlayer];
+            status.style.color = colorMap[currentPlayer];
         }
 
-        // --- 6. Time-Travel Engine (Undo / Redo) ---
+        function changePlayerCount(val) {
+            maxPlayers = parseInt(val);
+            resetGame();
+        }
+
+        // --- 5. Time-Travel & Resets ---
         function undo() {
             if (historyStack.length === 0 || !gameActive) return;
-            
-            // Capture current state to shift into Redo memory space
             redoStack.push({ board: [...board], player: currentPlayer });
             
             let previousState = historyStack.pop();
             board = previousState.board;
             currentPlayer = previousState.player;
 
-            // Re-render structural state matching index history
             board.forEach((val, idx) => updateCubeVisual(idx, val));
-            
             updateUiState();
             updateButtonStates();
             
-            // If you undo an AI's turn, automatically trigger a step back so it returns to the human input phase
-            if (currentPlayer !== 1 && historyStack.length > 0) {
-                undo();
-            }
+            if (currentPlayer !== 1 && historyStack.length > 0) undo();
         }
 
         function redo() {
             if (redoStack.length === 0 || !gameActive) return;
-
             historyStack.push({ board: [...board], player: currentPlayer });
             
             let nextState = redoStack.pop();
@@ -339,7 +380,6 @@
             currentPlayer = nextState.player;
 
             board.forEach((val, idx) => updateCubeVisual(idx, val));
-            
             updateUiState();
             updateButtonStates();
         }
@@ -356,12 +396,10 @@
             redoStack = [];
             currentPlayer = 1;
             gameActive = true;
-            document.getElementById('reset-btn').style.display = 'none';
             updateUiState();
             updateButtonStates();
         }
 
-        // --- 7. Event Handlers & Core Loop ---
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
@@ -374,6 +412,7 @@
             renderer.render(scene, camera);
         }
         
+        renderLeaderboard();
         updateButtonStates();
         animate();
     </script>
