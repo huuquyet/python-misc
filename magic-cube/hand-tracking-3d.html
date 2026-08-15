@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe 3D Hand Tracking + Three.js</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #0b0b10;
+            font-family: monospace;
+            color: white;
+            user-select: none;
+        }
+        #ui {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            background: rgba(15, 15, 25, 0.85);
+            border: 1px solid #333;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+        h1 { margin: 0 0 6px 0; font-size: 16px; color: #00ffcc; }
+        .info { font-size: 12px; color: #aaa; margin-bottom: 4px; }
+        #status { font-weight: bold; color: #ffaa00; }
+        
+        /* Mirror video for intuitive interaction */
+        #webcam {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 180px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #444;
+            transform: scaleX(-1);
+            z-index: 5;
+            opacity: 0.7;
+        }
+    </style>
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <!-- MediaPipe Hand Landmarker Tasks API -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="ui">
+        <h1>Hand Tracking 3D Interaction</h1>
+        <div class="info">Action: <span id="status">Pinch Index + Thumb to Grab</span></div>
+        <div class="info">Hand Status: <span id="hand-detected" style="color: #ff3333;">Searching...</span></div>
+    </div>
+
+    <!-- Hidden / Preview Webcam -->
+    <video id="webcam" autoplay playsinline></video>
+
+    <script type="module">
+        import { HandLandmarker, FilesetResolver } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0";
+
+        // --- 1. Three.js Scene Setup ---
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 5);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        dirLight.position.set(5, 10, 7);
+        scene.add(dirLight);
+
+        // Interactive 3D Cube
+        const cubeGeo = new THREE.BoxGeometry(0.8, 0.8, 0.8);
+        const cubeMat = new THREE.MeshPhongMaterial({ color: 0x00ffcc, transparent: true, opacity: 0.85 });
+        const targetCube = new THREE.Mesh(cubeGeo, cubeMat);
+        scene.add(targetCube);
+
+        // Hand Skeleton Joint Visualizers (21 points)
+        const jointSpheres = [];
+        const jointGeo = new THREE.SphereGeometry(0.03, 8, 8);
+        const jointMat = new THREE.MeshBasicMaterial({ color: 0xff0055 });
+
+        for (let i = 0; i < 21; i++) {
+            const sphere = new THREE.Mesh(jointGeo, jointMat);
+            sphere.visible = false;
+            scene.add(sphere);
+            jointSpheres.push(sphere);
+        }
+
+        // --- 2. Initialize MediaPipe HandLandmarker ---
+        let handLandmarker;
+        let lastVideoTime = -1;
+        let isGrabbing = false;
+
+        async function createHandLandmarker() {
+            const vision = await FilesetResolver.forVisionTasks(
+                "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.0/wasm"
+            );
+            handLandmarker = await HandLandmarker.createFromOptions(vision, {
+                baseOptions: {
+                    modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,
+                    delegate: "GPU"
+                },
+                runningMode: "VIDEO",
+                numHands: 1
+            });
+            setupWebcam();
+        }
+
+        // --- 3. Webcam Feed Integration ---
+        const video = document.getElementById("webcam");
+
+        function setupWebcam() {
+            navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 } }).then((stream) => {
+                video.srcObject = stream;
+                video.addEventListener("loadeddata", predictWebcam);
+            });
+        }
+
+        // --- 4. Main Tracking & Interaction Loop ---
+        async function predictWebcam() {
+            if (video.currentTime !== lastVideoTime && handLandmarker) {
+                lastVideoTime = video.currentTime;
+                const results = handLandmarker.detectForVideo(video, performance.now());
+
+                if (results.landmarks && results.landmarks.length > 0) {
+                    document.getElementById("hand-detected").innerText = "Tracking Active";
+                    document.getElementById("hand-detected").style.color = "#00ffcc";
+
+                    const landmarks = results.landmarks[0];
+
+                    // Map 21 hand landmarks to 3D Three.js Coordinate Space
+                    landmarks.forEach((lm, idx) => {
+                        // Invert X because camera is mirrored
+                        const x = -(lm.x - 0.5) * 6; 
+                        const y = -(lm.y - 0.5) * 4.5;
+                        const z = -lm.z * 5; 
+
+                        jointSpheres[idx].position.set(x, y, z);
+                        jointSpheres[idx].visible = true;
+                    });
+
+                    // Detect Pinch Interaction (Thumb Tip = 4, Index Tip = 8)
+                    const thumbTip = jointSpheres[4].position;
+                    const indexTip = jointSpheres[8].position;
+                    
+                    const pinchDistance = thumbTip.distanceTo(indexTip);
+                    const pinchCenter = new THREE.Vector3().addVectors(thumbTip, indexTip).multiplyScalar(0.5);
+
+                    // Threshold distance for pinch gesture (~0.35 units)
+                    if (pinchDistance < 0.35) {
+                        if (!isGrabbing) {
+                            isGrabbing = true;
+                            targetCube.material.color.setHex(0xffaa00); // Highlight amber when grabbed
+                            document.getElementById("status").innerText = "Grabbing Cube!";
+                        }
+                        // Move cube smoothly to hand pinch center position
+                        targetCube.position.lerp(pinchCenter, 0.3);
+                        targetCube.rotation.x += 0.02;
+                        targetCube.rotation.y += 0.02;
+                    } else {
+                        if (isGrabbing) {
+                            isGrabbing = false;
+                            targetCube.material.color.setHex(0x00ffcc); // Reset to cyan
+                            document.getElementById("status").innerText = "Pinch Index + Thumb to Grab";
+                        }
+                    }
+
+                } else {
+                    document.getElementById("hand-detected").innerText = "Searching...";
+                    document.getElementById("hand-detected").style.color = "#ff3333";
+                    jointSpheres.forEach(s => s.visible = false);
+                }
+            }
+
+            renderer.render(scene, camera);
+            requestAnimationFrame(predictWebcam);
+        }
+
+        window.addEventListener("resize", () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        createHandLandmarker();
+    </script>
+</body>
+</html>
