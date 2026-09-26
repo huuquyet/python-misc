@@ -1,0 +1,3138 @@
+<svg id="mySVG" width="2400" height="2400" viewBox="0 0 2400 2400" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <defs>
+    <style>
+      text {
+        font: bold 28px Inter, Roboto, 'Noto Sans', 'Segoe UI', 'Open Sans', 'Helvetica Neue', Montserrat, sans-serif;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="black"></rect>
+  <g id="diagram">
+    <circle cx="1200" cy="1200" r="1150" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L386.8272016354704,386.82720163547026 A1150,1150 0 0,1 2013.1727983645296,386.8272016354704 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1150_0_0"
+      d="M422.1825406947978,422.1825406947977 A1150,1150 0 0,1 1977.8174593052022,422.1825406947978" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_0_0" startOffset="50%">Winter</textPath>
+    </text>
+    <path id="arc1150_0_1"
+      d="M443.3957441303942,443.39574413039406 A1150,1150 0 0,1 1956.6042558696058,443.3957441303942" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_0_1" startOffset="50%">North</textPath>
+    </text>
+    <path id="arc1150_0_2"
+      d="M400.9693372592013,400.9693372592012 A1150,1150 0 0,1 1999.0306627407988,400.9693372592013" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_0_2" startOffset="50%">Black Tortoise of the North</textPath>
+    </text>
+    <path d="M1200,1200 L2013.1727983645296,386.8272016354704 A1150,1150 0 0,1 2013.1727983645296,2013.1727983645296 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1150_1_0"
+      d="M1977.8174593052022,422.1825406947978 A1150,1150 0 0,1 1977.8174593052022,1977.8174593052022" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_1_0" startOffset="50%">Spring</textPath>
+    </text>
+    <path id="arc1150_1_1"
+      d="M1956.6042558696058,443.3957441303942 A1150,1150 0 0,1 1956.6042558696058,1956.6042558696058" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_1_1" startOffset="50%">East</textPath>
+    </text>
+    <path id="arc1150_1_2"
+      d="M1999.0306627407988,400.9693372592013 A1150,1150 0 0,1 1999.0306627407988,1999.0306627407986" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_1_2" startOffset="50%">Azure Dragon of the East</textPath>
+    </text>
+    <path d="M1200,1200 L2013.1727983645296,2013.1727983645296 A1150,1150 0 0,1 386.8272016354704,2013.1727983645296 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1150_2_0"
+      d="M1977.8174593052022,1977.8174593052022 A1150,1150 0 0,1 422.1825406947978,1977.8174593052022" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_2_0" startOffset="50%">Summer</textPath>
+    </text>
+    <path id="arc1150_2_1"
+      d="M1956.6042558696058,1956.6042558696058 A1150,1150 0 0,1 443.3957441303942,1956.6042558696058" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_2_1" startOffset="50%">South</textPath>
+    </text>
+    <path id="arc1150_2_2"
+      d="M1999.0306627407988,1999.0306627407986 A1150,1150 0 0,1 400.9693372592013,1999.0306627407988" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_2_2" startOffset="50%">Vermilion Bird of the South</textPath>
+    </text>
+    <path d="M1200,1200 L386.8272016354704,2013.1727983645296 A1150,1150 0 0,1 386.82720163547015,386.8272016354704 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1150_3_0"
+      d="M422.1825406947978,1977.8174593052022 A1150,1150 0 0,1 422.1825406947976,422.1825406947978" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_3_0" startOffset="50%">Autumn</textPath>
+    </text>
+    <path id="arc1150_3_1"
+      d="M443.3957441303942,1956.6042558696058 A1150,1150 0 0,1 443.39574413039395,443.3957441303942" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_3_1" startOffset="50%">West</textPath>
+    </text>
+    <path id="arc1150_3_2"
+      d="M400.9693372592013,1999.0306627407988 A1150,1150 0 0,1 400.9693372592011,400.9693372592013" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1150_3_2" startOffset="50%">White Tiger of the West</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="1000" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1147.6640437570563,201.3704652454262 A1000,1000 0 0,1 1252.335956242944,201.3704652454262 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_0_0"
+      d="M1150.2808415692036,251.30194198315485 A1000,1000 0 0,1 1249.7191584307968,251.30194198315485" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_0_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_0_1"
+      d="M1151.850920256492,281.2608280257921 A1000,1000 0 0,1 1248.1490797435085,281.2608280257921" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_0_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc1000_0_2"
+      d="M1148.7107628819153,221.34305594051762 A1000,1000 0 0,1 1251.289237118085,221.34305594051762" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_0_2" startOffset="50%">Sea</textPath>
+    </text>
+    <path d="M1200,1200 L1252.335956242944,201.3704652454262 A1000,1000 0 0,1 1356.4344650402309,212.3116594048622 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_1_0"
+      d="M1249.7191584307968,251.30194198315485 A1000,1000 0 0,1 1348.6127417882194,261.69607643461916" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_1_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_1_1"
+      d="M1248.1490797435085,281.2608280257921 A1000,1000 0 0,1 1343.9197078370125,291.3267266524732" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_1_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc1000_1_2"
+      d="M1251.289237118085,221.34305594051762 A1000,1000 0 0,1 1353.3057757394263,232.065426216765" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_1_2" startOffset="50%">Sea</textPath>
+    </text>
+    <path d="M1200,1200 L1356.4344650402309,212.3116594048622 A1000,1000 0 0,1 1458.8190451025207,234.07417371093163 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_2_0"
+      d="M1348.6127417882194,261.69607643461916 A1000,1000 0 0,1 1445.8780928473948,282.3704650253851" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_2_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_2_1"
+      d="M1343.9197078370125,291.3267266524732 A1000,1000 0 0,1 1438.113521494319,311.34823981405714" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_2_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc1000_2_2"
+      d="M1353.3057757394263,232.065426216765 A1000,1000 0 0,1 1453.6426642004703,253.39269023671307" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_2_2" startOffset="50%">Furnace</textPath>
+    </text>
+    <path d="M1200,1200 L1458.8190451025207,234.07417371093163 A1000,1000 0 0,1 1558.3679495453005,266.41957350279824 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_3_0"
+      d="M1445.8780928473948,282.3704650253851 A1000,1000 0 0,1 1540.4495520680352,313.0985948276583" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_3_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_3_1"
+      d="M1438.113521494319,311.34823981405714 A1000,1000 0 0,1 1529.6985135816763,341.10600762257445" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_3_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc1000_3_2"
+      d="M1453.6426642004703,253.39269023671307 A1000,1000 0 0,1 1551.2005905543942,285.09118203274227" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_3_2" startOffset="50%">Furnace</textPath>
+    </text>
+    <path d="M1200,1200 L1558.3679495453005,266.41957350279824 A1000,1000 0 0,1 1653.9904997395467,308.99347581163227 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_4_0"
+      d="M1540.4495520680352,313.0985948276583 A1000,1000 0 0,1 1631.2909747525696,353.5438020210506" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_4_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_4_1"
+      d="M1529.6985135816763,341.10600762257445 A1000,1000 0 0,1 1617.671259760383,380.27399774670164" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_4_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc1000_4_2"
+      d="M1551.2005905543942,285.09118203274227 A1000,1000 0 0,1 1644.910689744756,326.8136062953996" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_4_2" startOffset="50%">Forest</textPath>
+    </text>
+    <path d="M1200,1200 L1653.9904997395467,308.99347581163227 A1000,1000 0 0,1 1744.6390350150273,361.32943205457605 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_5_0"
+      d="M1631.2909747525696,353.5438020210506 A1000,1000 0 0,1 1717.4070832642758,403.2629604518472" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_5_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_5_1"
+      d="M1617.671259760383,380.27399774670164 A1000,1000 0 0,1 1701.067912213825,428.42307749020995" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_5_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc1000_5_2"
+      d="M1644.910689744756,326.8136062953996 A1000,1000 0 0,1 1733.7462543147267,378.1028434134845" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_5_2" startOffset="50%">Forest</textPath>
+    </text>
+    <path d="M1200,1200 L1744.6390350150273,361.32943205457605 A1000,1000 0 0,1 1829.3203910498376,422.8540385430292 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_6_0"
+      d="M1717.4070832642758,403.2629604518472 A1000,1000 0 0,1 1797.8543714973457,461.7113366158777" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_6_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_6_1"
+      d="M1701.067912213825,428.42307749020995 A1000,1000 0 0,1 1778.9747597658506,485.0257154595869" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_6_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc1000_6_2"
+      d="M1733.7462543147267,378.1028434134845 A1000,1000 0 0,1 1816.7339832288408,438.39695777216866" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_6_2" startOffset="50%">Road</textPath>
+    </text>
+    <path d="M1200,1200 L1829.3203910498376,422.8540385430292 A1000,1000 0 0,1 1907.1067811865476,492.89321881345256 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_7_0"
+      d="M1797.8543714973457,461.7113366158777 A1000,1000 0 0,1 1871.7514421272203,528.2485578727799" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_7_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_7_1"
+      d="M1778.9747597658506,485.0257154595869 A1000,1000 0 0,1 1850.5382386916237,549.4617613083764" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_7_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc1000_7_2"
+      d="M1816.7339832288408,438.39695777216866 A1000,1000 0 0,1 1892.9646455628167,507.0353544371835" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_7_2" startOffset="50%">Road</textPath>
+    </text>
+    <path d="M1200,1200 L1907.1067811865476,492.89321881345256 A1000,1000 0 0,1 1977.1459614569708,570.6796089501626 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_8_0"
+      d="M1871.7514421272203,528.2485578727799 A1000,1000 0 0,1 1938.2886633841224,602.1456285026545" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_8_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_8_1"
+      d="M1850.5382386916237,549.4617613083764 A1000,1000 0 0,1 1914.9742845404132,621.0252402341496" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_8_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc1000_8_2"
+      d="M1892.9646455628167,507.0353544371835 A1000,1000 0 0,1 1961.6030422278313,583.2660167711593" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_8_2" startOffset="50%">Sword</textPath>
+    </text>
+    <path d="M1200,1200 L1977.1459614569708,570.6796089501626 A1000,1000 0 0,1 2038.670567945424,655.360964984973 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_9_0"
+      d="M1938.2886633841224,602.1456285026545 A1000,1000 0 0,1 1996.737039548153,682.5929167357243" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_9_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_9_1"
+      d="M1914.9742845404132,621.0252402341496 A1000,1000 0 0,1 1971.5769225097902,698.9320877861751" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_9_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc1000_9_2"
+      d="M1961.6030422278313,583.2660167711593 A1000,1000 0 0,1 2021.8971565865156,666.2537456852734" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_9_2" startOffset="50%">Sword</textPath>
+    </text>
+    <path d="M1200,1200 L2038.670567945424,655.360964984973 A1000,1000 0 0,1 2091.0065241883676,746.0095002604533 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_10_0"
+      d="M1996.737039548153,682.5929167357243 A1000,1000 0 0,1 2046.4561979789496,768.7090252474306" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_10_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_10_1"
+      d="M1971.5769225097902,698.9320877861751 A1000,1000 0 0,1 2019.7260022532985,782.328740239617" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_10_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc1000_10_2"
+      d="M2021.8971565865156,666.2537456852734 A1000,1000 0 0,1 2073.1863937046005,755.0893102552442" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_10_2" startOffset="50%">Volcanic</textPath>
+    </text>
+    <path d="M1200,1200 L2091.0065241883676,746.0095002604533 A1000,1000 0 0,1 2133.5804264972016,841.6320504546998 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_11_0"
+      d="M2046.4561979789496,768.7090252474306 A1000,1000 0 0,1 2086.9014051723416,859.5504479319648" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_11_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_11_1"
+      d="M2019.7260022532985,782.328740239617 A1000,1000 0 0,1 2058.8939923774255,870.3014864183237" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_11_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc1000_11_2"
+      d="M2073.1863937046005,755.0893102552442 A1000,1000 0 0,1 2114.9088179672576,848.7994094456058" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_11_2" startOffset="50%">Volcanic</textPath>
+    </text>
+    <path d="M1200,1200 L2133.5804264972016,841.6320504546998 A1000,1000 0 0,1 2165.9258262890685,941.1809548974793 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_12_0"
+      d="M2086.9014051723416,859.5504479319648 A1000,1000 0 0,1 2117.629534974615,954.1219071526053" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_12_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_12_1"
+      d="M2058.8939923774255,870.3014864183237 A1000,1000 0 0,1 2088.6517601859427,961.8864785056809" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_12_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc1000_12_2"
+      d="M2114.9088179672576,848.7994094456058 A1000,1000 0 0,1 2146.607309763287,946.3573357995297" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_12_2" startOffset="50%">Creek</textPath>
+    </text>
+    <path d="M1200,1200 L2165.9258262890685,941.1809548974793 A1000,1000 0 0,1 2187.6883405951376,1043.5655349597691 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_13_0"
+      d="M2117.629534974615,954.1219071526053 A1000,1000 0 0,1 2138.303923565381,1051.3872582117806" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_13_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_13_1"
+      d="M2088.6517601859427,961.8864785056809 A1000,1000 0 0,1 2108.673273347527,1056.0802921629877" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_13_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc1000_13_2"
+      d="M2146.607309763287,946.3573357995297 A1000,1000 0 0,1 2167.934573783235,1046.6942242605737" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_13_2" startOffset="50%">Creek</textPath>
+    </text>
+    <path d="M1200,1200 L2187.6883405951376,1043.5655349597691 A1000,1000 0 0,1 2198.629534754574,1147.664043757056 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_14_0"
+      d="M2138.303923565381,1051.3872582117806 A1000,1000 0 0,1 2148.698058016845,1150.2808415692034" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_14_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_14_1"
+      d="M2108.673273347527,1056.0802921629877 A1000,1000 0 0,1 2118.739171974208,1151.8509202564917" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_14_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc1000_14_2"
+      d="M2167.934573783235,1046.6942242605737 A1000,1000 0 0,1 2178.656944059482,1148.7107628819151" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_14_2" startOffset="50%">Fortress</textPath>
+    </text>
+    <path d="M1200,1200 L2198.629534754574,1147.664043757056 A1000,1000 0 0,1 2198.629534754574,1252.335956242944 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_15_0"
+      d="M2148.698058016845,1150.2808415692034 A1000,1000 0 0,1 2148.698058016845,1249.7191584307966" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_15_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_15_1"
+      d="M2118.739171974208,1151.8509202564917 A1000,1000 0 0,1 2118.739171974208,1248.1490797435083" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_15_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc1000_15_2"
+      d="M2178.656944059482,1148.7107628819151 A1000,1000 0 0,1 2178.656944059482,1251.2892371180849" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_15_2" startOffset="50%">Fortress</textPath>
+    </text>
+    <path d="M1200,1200 L2198.629534754574,1252.335956242944 A1000,1000 0 0,1 2187.6883405951376,1356.4344650402309 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_16_0"
+      d="M2148.698058016845,1249.7191584307966 A1000,1000 0 0,1 2138.303923565381,1348.6127417882194" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_16_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_16_1"
+      d="M2118.739171974208,1248.1490797435083 A1000,1000 0 0,1 2108.673273347527,1343.9197078370123" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_16_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc1000_16_2"
+      d="M2178.656944059482,1251.2892371180849 A1000,1000 0 0,1 2167.934573783235,1353.3057757394263" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_16_2" startOffset="50%">Pewter</textPath>
+    </text>
+    <path d="M1200,1200 L2187.6883405951376,1356.4344650402309 A1000,1000 0 0,1 2165.9258262890685,1458.8190451025207 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_17_0"
+      d="M2138.303923565381,1348.6127417882194 A1000,1000 0 0,1 2117.629534974615,1445.8780928473948" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_17_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_17_1"
+      d="M2108.673273347527,1343.9197078370123 A1000,1000 0 0,1 2088.6517601859427,1438.113521494319" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_17_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc1000_17_2"
+      d="M2167.934573783235,1353.3057757394263 A1000,1000 0 0,1 2146.607309763287,1453.6426642004703" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_17_2" startOffset="50%">Pewter</textPath>
+    </text>
+    <path d="M1200,1200 L2165.9258262890685,1458.8190451025207 A1000,1000 0 0,1 2133.5804264972016,1558.3679495453002 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_18_0"
+      d="M2117.629534974615,1445.8780928473948 A1000,1000 0 0,1 2086.9014051723416,1540.4495520680352" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_18_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_18_1"
+      d="M2088.6517601859427,1438.113521494319 A1000,1000 0 0,1 2058.8939923774255,1529.6985135816763" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_18_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc1000_18_2"
+      d="M2146.607309763287,1453.6426642004703 A1000,1000 0 0,1 2114.9088179672576,1551.2005905543942" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_18_2" startOffset="50%">Willow</textPath>
+    </text>
+    <path d="M1200,1200 L2133.5804264972016,1558.3679495453002 A1000,1000 0 0,1 2091.0065241883676,1653.9904997395467 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_19_0"
+      d="M2086.9014051723416,1540.4495520680352 A1000,1000 0 0,1 2046.4561979789496,1631.2909747525694" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_19_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_19_1"
+      d="M2058.8939923774255,1529.6985135816763 A1000,1000 0 0,1 2019.7260022532985,1617.671259760383" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_19_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc1000_19_2"
+      d="M2114.9088179672576,1551.2005905543942 A1000,1000 0 0,1 2073.1863937046005,1644.910689744756" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_19_2" startOffset="50%">Willow</textPath>
+    </text>
+    <path d="M1200,1200 L2091.0065241883676,1653.9904997395467 A1000,1000 0 0,1 2038.670567945424,1744.639035015027 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_20_0"
+      d="M2046.4561979789496,1631.2909747525694 A1000,1000 0 0,1 1996.737039548153,1717.4070832642756" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_20_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_20_1"
+      d="M2019.7260022532985,1617.671259760383 A1000,1000 0 0,1 1971.5769225097902,1701.067912213825" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_20_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc1000_20_2"
+      d="M2073.1863937046005,1644.910689744756 A1000,1000 0 0,1 2021.8971565865156,1733.7462543147267" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_20_2" startOffset="50%">Stream</textPath>
+    </text>
+    <path d="M1200,1200 L2038.670567945424,1744.639035015027 A1000,1000 0 0,1 1977.1459614569708,1829.3203910498373 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_21_0"
+      d="M1996.737039548153,1717.4070832642756 A1000,1000 0 0,1 1938.2886633841224,1797.8543714973455" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_21_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_21_1"
+      d="M1971.5769225097902,1701.067912213825 A1000,1000 0 0,1 1914.9742845404132,1778.9747597658504" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_21_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc1000_21_2"
+      d="M2021.8971565865156,1733.7462543147267 A1000,1000 0 0,1 1961.6030422278313,1816.7339832288408" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_21_2" startOffset="50%">Stream</textPath>
+    </text>
+    <path d="M1200,1200 L1977.1459614569708,1829.3203910498373 A1000,1000 0 0,1 1907.1067811865476,1907.1067811865473 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_22_0"
+      d="M1938.2886633841224,1797.8543714973455 A1000,1000 0 0,1 1871.7514421272203,1871.7514421272201" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_22_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_22_1"
+      d="M1914.9742845404132,1778.9747597658504 A1000,1000 0 0,1 1850.5382386916237,1850.5382386916235" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_22_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc1000_22_2"
+      d="M1961.6030422278313,1816.7339832288408 A1000,1000 0 0,1 1892.9646455628167,1892.9646455628165" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_22_2" startOffset="50%">Roof Tiles</textPath>
+    </text>
+    <path d="M1200,1200 L1907.1067811865476,1907.1067811865473 A1000,1000 0 0,1 1829.3203910498376,1977.1459614569708 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_23_0"
+      d="M1871.7514421272203,1871.7514421272201 A1000,1000 0 0,1 1797.8543714973457,1938.2886633841222" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_23_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_23_1"
+      d="M1850.5382386916237,1850.5382386916235 A1000,1000 0 0,1 1778.9747597658506,1914.974284540413" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_23_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc1000_23_2"
+      d="M1892.9646455628167,1892.9646455628165 A1000,1000 0 0,1 1816.7339832288408,1961.6030422278313" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_23_2" startOffset="50%">Roof Tiles</textPath>
+    </text>
+    <path d="M1200,1200 L1829.3203910498376,1977.1459614569708 A1000,1000 0 0,1 1744.6390350150273,2038.670567945424 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_24_0"
+      d="M1797.8543714973457,1938.2886633841222 A1000,1000 0 0,1 1717.4070832642758,1996.7370395481528" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_24_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_24_1"
+      d="M1778.9747597658506,1914.974284540413 A1000,1000 0 0,1 1701.067912213825,1971.5769225097902" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_24_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc1000_24_2"
+      d="M1816.7339832288408,1961.6030422278313 A1000,1000 0 0,1 1733.7462543147267,2021.8971565865154" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_24_2" startOffset="50%">Lightning</textPath>
+    </text>
+    <path d="M1200,1200 L1744.6390350150273,2038.670567945424 A1000,1000 0 0,1 1653.9904997395467,2091.0065241883676 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_25_0"
+      d="M1717.4070832642758,1996.7370395481528 A1000,1000 0 0,1 1631.2909747525696,2046.4561979789494" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_25_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_25_1"
+      d="M1701.067912213825,1971.5769225097902 A1000,1000 0 0,1 1617.671259760383,2019.7260022532982" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_25_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc1000_25_2"
+      d="M1733.7462543147267,2021.8971565865154 A1000,1000 0 0,1 1644.910689744756,2073.1863937046005" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_25_2" startOffset="50%">Lightning</textPath>
+    </text>
+    <path d="M1200,1200 L1653.9904997395467,2091.0065241883676 A1000,1000 0 0,1 1558.3679495453005,2133.5804264972016 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_26_0"
+      d="M1631.2909747525696,2046.4561979789494 A1000,1000 0 0,1 1540.4495520680352,2086.9014051723416" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_26_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_26_1"
+      d="M1617.671259760383,2019.7260022532982 A1000,1000 0 0,1 1529.6985135816763,2058.8939923774255" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_26_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc1000_26_2"
+      d="M1644.910689744756,2073.1863937046005 A1000,1000 0 0,1 1551.2005905543942,2114.9088179672576" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_26_2" startOffset="50%">Conifer</textPath>
+    </text>
+    <path d="M1200,1200 L1558.3679495453005,2133.5804264972016 A1000,1000 0 0,1 1458.8190451025207,2165.9258262890685 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_27_0"
+      d="M1540.4495520680352,2086.9014051723416 A1000,1000 0 0,1 1445.8780928473948,2117.629534974615" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_27_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_27_1"
+      d="M1529.6985135816763,2058.8939923774255 A1000,1000 0 0,1 1438.113521494319,2088.6517601859427" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_27_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc1000_27_2"
+      d="M1551.2005905543942,2114.9088179672576 A1000,1000 0 0,1 1453.6426642004703,2146.607309763287" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_27_2" startOffset="50%">Conifer</textPath>
+    </text>
+    <path d="M1200,1200 L1458.8190451025207,2165.9258262890685 A1000,1000 0 0,1 1356.4344650402309,2187.6883405951376 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_28_0"
+      d="M1445.8780928473948,2117.629534974615 A1000,1000 0 0,1 1348.6127417882194,2138.303923565381" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_28_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_28_1"
+      d="M1438.113521494319,2088.6517601859427 A1000,1000 0 0,1 1343.9197078370125,2108.673273347527" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_28_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc1000_28_2"
+      d="M1453.6426642004703,2146.607309763287 A1000,1000 0 0,1 1353.3057757394263,2167.934573783235" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_28_2" startOffset="50%">River</textPath>
+    </text>
+    <path d="M1200,1200 L1356.4344650402309,2187.6883405951376 A1000,1000 0 0,1 1252.335956242944,2198.629534754574 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_29_0"
+      d="M1348.6127417882194,2138.303923565381 A1000,1000 0 0,1 1249.7191584307968,2148.698058016845" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_29_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_29_1"
+      d="M1343.9197078370125,2108.673273347527 A1000,1000 0 0,1 1248.1490797435085,2118.739171974208" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_29_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc1000_29_2"
+      d="M1353.3057757394263,2167.934573783235 A1000,1000 0 0,1 1251.289237118085,2178.656944059482" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_29_2" startOffset="50%">River</textPath>
+    </text>
+    <path d="M1200,1200 L1252.335956242944,2198.629534754574 A1000,1000 0 0,1 1147.6640437570563,2198.629534754574 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_30_0"
+      d="M1249.7191584307968,2148.698058016845 A1000,1000 0 0,1 1150.2808415692036,2148.698058016845" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_30_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_30_1"
+      d="M1248.1490797435085,2118.739171974208 A1000,1000 0 0,1 1151.850920256492,2118.739171974208" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_30_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc1000_30_2"
+      d="M1251.289237118085,2178.656944059482 A1000,1000 0 0,1 1148.7107628819153,2178.656944059482" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_30_2" startOffset="50%">Sand</textPath>
+    </text>
+    <path d="M1200,1200 L1147.6640437570563,2198.629534754574 A1000,1000 0 0,1 1043.565534959769,2187.6883405951376 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_31_0"
+      d="M1150.2808415692036,2148.698058016845 A1000,1000 0 0,1 1051.3872582117806,2138.3039235653805" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_31_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_31_1"
+      d="M1151.850920256492,2118.739171974208 A1000,1000 0 0,1 1056.0802921629875,2108.6732733475264" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_31_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc1000_31_2"
+      d="M1148.7107628819153,2178.656944059482 A1000,1000 0 0,1 1046.6942242605735,2167.934573783235" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_31_2" startOffset="50%">Sand</textPath>
+    </text>
+    <path d="M1200,1200 L1043.565534959769,2187.6883405951376 A1000,1000 0 0,1 941.1809548974791,2165.9258262890685 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_32_0"
+      d="M1051.3872582117806,2138.3039235653805 A1000,1000 0 0,1 954.1219071526052,2117.629534974615" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_32_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_32_1"
+      d="M1056.0802921629875,2108.6732733475264 A1000,1000 0 0,1 961.8864785056808,2088.6517601859427" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_32_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc1000_32_2"
+      d="M1046.6942242605735,2167.934573783235 A1000,1000 0 0,1 946.3573357995296,2146.607309763287" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_32_2" startOffset="50%">Forest</textPath>
+    </text>
+    <path d="M1200,1200 L941.1809548974791,2165.9258262890685 A1000,1000 0 0,1 841.6320504546998,2133.5804264972016 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_33_0"
+      d="M954.1219071526052,2117.629534974615 A1000,1000 0 0,1 859.5504479319648,2086.9014051723416" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_33_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_33_1"
+      d="M961.8864785056808,2088.6517601859427 A1000,1000 0 0,1 870.3014864183237,2058.8939923774255" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_33_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc1000_33_2"
+      d="M946.3573357995296,2146.607309763287 A1000,1000 0 0,1 848.7994094456058,2114.9088179672576" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_33_2" startOffset="50%">Forest</textPath>
+    </text>
+    <path d="M1200,1200 L841.6320504546998,2133.5804264972016 A1000,1000 0 0,1 746.0095002604533,2091.0065241883676 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_34_0"
+      d="M859.5504479319648,2086.9014051723416 A1000,1000 0 0,1 768.7090252474306,2046.4561979789496" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_34_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_34_1"
+      d="M870.3014864183237,2058.8939923774255 A1000,1000 0 0,1 782.328740239617,2019.7260022532985" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_34_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc1000_34_2"
+      d="M848.7994094456058,2114.9088179672576 A1000,1000 0 0,1 755.0893102552443,2073.1863937046005" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_34_2" startOffset="50%">Meadow</textPath>
+    </text>
+    <path d="M1200,1200 L746.0095002604533,2091.0065241883676 A1000,1000 0 0,1 655.360964984973,2038.670567945424 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_35_0"
+      d="M768.7090252474306,2046.4561979789496 A1000,1000 0 0,1 682.5929167357243,1996.7370395481528" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_35_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_35_1"
+      d="M782.328740239617,2019.7260022532985 A1000,1000 0 0,1 698.9320877861751,1971.5769225097902" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_35_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc1000_35_2"
+      d="M755.0893102552443,2073.1863937046005 A1000,1000 0 0,1 666.2537456852734,2021.8971565865154" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_35_2" startOffset="50%">Meadow</textPath>
+    </text>
+    <path d="M1200,1200 L655.360964984973,2038.670567945424 A1000,1000 0 0,1 570.6796089501627,1977.145961456971 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_36_0"
+      d="M682.5929167357243,1996.7370395481528 A1000,1000 0 0,1 602.1456285026546,1938.2886633841226" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_36_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_36_1"
+      d="M698.9320877861751,1971.5769225097902 A1000,1000 0 0,1 621.0252402341497,1914.9742845404135" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_36_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc1000_36_2"
+      d="M666.2537456852734,2021.8971565865154 A1000,1000 0 0,1 583.2660167711595,1961.6030422278316" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_36_2" startOffset="50%">Adobe</textPath>
+    </text>
+    <path d="M1200,1200 L570.6796089501627,1977.145961456971 A1000,1000 0 0,1 492.89321881345256,1907.1067811865476 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_37_0"
+      d="M602.1456285026546,1938.2886633841226 A1000,1000 0 0,1 528.2485578727799,1871.7514421272203" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_37_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_37_1"
+      d="M621.0252402341497,1914.9742845404135 A1000,1000 0 0,1 549.4617613083764,1850.5382386916237" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_37_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc1000_37_2"
+      d="M583.2660167711595,1961.6030422278316 A1000,1000 0 0,1 507.0353544371835,1892.9646455628167" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_37_2" startOffset="50%">Adobe</textPath>
+    </text>
+    <path d="M1200,1200 L492.89321881345256,1907.1067811865476 A1000,1000 0 0,1 422.85403854302933,1829.3203910498378 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_38_0"
+      d="M528.2485578727799,1871.7514421272203 A1000,1000 0 0,1 461.7113366158778,1797.8543714973457" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_38_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_38_1"
+      d="M549.4617613083764,1850.5382386916237 A1000,1000 0 0,1 485.025715459587,1778.9747597658506" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_38_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc1000_38_2"
+      d="M507.0353544371835,1892.9646455628167 A1000,1000 0 0,1 438.3969577721688,1816.733983228841" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_38_2" startOffset="50%">Foil</textPath>
+    </text>
+    <path d="M1200,1200 L422.85403854302933,1829.3203910498378 A1000,1000 0 0,1 361.3294320545758,1744.6390350150268 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_39_0"
+      d="M461.7113366158778,1797.8543714973457 A1000,1000 0 0,1 403.262960451847,1717.4070832642756" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_39_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_39_1"
+      d="M485.025715459587,1778.9747597658506 A1000,1000 0 0,1 428.4230774902097,1701.067912213825" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_39_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc1000_39_2"
+      d="M438.3969577721688,1816.733983228841 A1000,1000 0 0,1 378.10284341348427,1733.7462543147265" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_39_2" startOffset="50%">Foil</textPath>
+    </text>
+    <path d="M1200,1200 L361.3294320545758,1744.6390350150268 A1000,1000 0 0,1 308.99347581163227,1653.990499739547 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_40_0"
+      d="M403.262960451847,1717.4070832642756 A1000,1000 0 0,1 353.5438020210506,1631.2909747525696" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_40_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_40_1"
+      d="M428.4230774902097,1701.067912213825 A1000,1000 0 0,1 380.27399774670164,1617.6712597603832" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_40_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc1000_40_2"
+      d="M378.10284341348427,1733.7462543147265 A1000,1000 0 0,1 326.8136062953996,1644.910689744756" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_40_2" startOffset="50%">Lamp</textPath>
+    </text>
+    <path d="M1200,1200 L308.99347581163227,1653.990499739547 A1000,1000 0 0,1 266.41957350279824,1558.3679495453002 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_41_0"
+      d="M353.5438020210506,1631.2909747525696 A1000,1000 0 0,1 313.0985948276583,1540.4495520680352" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_41_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_41_1"
+      d="M380.27399774670164,1617.6712597603832 A1000,1000 0 0,1 341.10600762257445,1529.6985135816763" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_41_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc1000_41_2"
+      d="M326.8136062953996,1644.910689744756 A1000,1000 0 0,1 285.09118203274227,1551.2005905543942" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_41_2" startOffset="50%">Lamp</textPath>
+    </text>
+    <path d="M1200,1200 L266.41957350279824,1558.3679495453002 A1000,1000 0 0,1 234.07417371093175,1458.8190451025212 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_42_0"
+      d="M313.0985948276583,1540.4495520680352 A1000,1000 0 0,1 282.3704650253852,1445.878092847395" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_42_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_42_1"
+      d="M341.10600762257445,1529.6985135816763 A1000,1000 0 0,1 311.34823981405725,1438.1135214943192" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_42_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc1000_42_2"
+      d="M285.09118203274227,1551.2005905543942 A1000,1000 0 0,1 253.39269023671318,1453.6426642004706" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_42_2" startOffset="50%">Sky</textPath>
+    </text>
+    <path d="M1200,1200 L234.07417371093175,1458.8190451025212 A1000,1000 0 0,1 212.31165940486233,1356.4344650402309 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_43_0"
+      d="M282.3704650253852,1445.878092847395 A1000,1000 0 0,1 261.6960764346193,1348.6127417882194" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_43_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_43_1"
+      d="M311.34823981405725,1438.1135214943192 A1000,1000 0 0,1 291.3267266524733,1343.9197078370125" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_43_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc1000_43_2"
+      d="M253.39269023671318,1453.6426642004706 A1000,1000 0 0,1 232.0654262167651,1353.3057757394263" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_43_2" startOffset="50%">Sky</textPath>
+    </text>
+    <path d="M1200,1200 L212.31165940486233,1356.4344650402309 A1000,1000 0 0,1 201.3704652454262,1252.335956242944 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_44_0"
+      d="M261.6960764346193,1348.6127417882194 A1000,1000 0 0,1 251.30194198315485,1249.7191584307966" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_44_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_44_1"
+      d="M291.3267266524733,1343.9197078370125 A1000,1000 0 0,1 281.2608280257921,1248.1490797435083" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_44_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc1000_44_2"
+      d="M232.0654262167651,1353.3057757394263 A1000,1000 0 0,1 221.34305594051762,1251.2892371180849" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_44_2" startOffset="50%">Stage Station</textPath>
+    </text>
+    <path d="M1200,1200 L201.3704652454262,1252.335956242944 A1000,1000 0 0,1 201.3704652454262,1147.6640437570563 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_45_0"
+      d="M251.30194198315485,1249.7191584307966 A1000,1000 0 0,1 251.30194198315485,1150.2808415692036" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_45_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_45_1"
+      d="M281.2608280257921,1248.1490797435083 A1000,1000 0 0,1 281.2608280257921,1151.850920256492" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_45_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc1000_45_2"
+      d="M221.34305594051762,1251.2892371180849 A1000,1000 0 0,1 221.34305594051762,1148.7107628819153" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_45_2" startOffset="50%">Stage Station</textPath>
+    </text>
+    <path d="M1200,1200 L201.3704652454262,1147.6640437570563 A1000,1000 0 0,1 212.3116594048622,1043.5655349597694 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_46_0"
+      d="M251.30194198315485,1150.2808415692036 A1000,1000 0 0,1 261.69607643461916,1051.3872582117808" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_46_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_46_1"
+      d="M281.2608280257921,1151.850920256492 A1000,1000 0 0,1 291.3267266524732,1056.0802921629877" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_46_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc1000_46_2"
+      d="M221.34305594051762,1148.7107628819153 A1000,1000 0 0,1 232.065426216765,1046.694224260574" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_46_2" startOffset="50%">Jewellery</textPath>
+    </text>
+    <path d="M1200,1200 L212.3116594048622,1043.5655349597694 A1000,1000 0 0,1 234.07417371093163,941.1809548974796 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_47_0"
+      d="M261.69607643461916,1051.3872582117808 A1000,1000 0 0,1 282.370465025385,954.1219071526057" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_47_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc1000_47_1"
+      d="M291.3267266524732,1056.0802921629877 A1000,1000 0 0,1 311.348239814057,961.8864785056812" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_47_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc1000_47_2"
+      d="M232.065426216765,1046.694224260574 A1000,1000 0 0,1 253.39269023671295,946.3573357995301" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_47_2" startOffset="50%">Jewellery</textPath>
+    </text>
+    <path d="M1200,1200 L234.07417371093163,941.1809548974796 A1000,1000 0 0,1 266.41957350279824,841.6320504546995 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_48_0" d="M282.370465025385,954.1219071526057 A1000,1000 0 0,1 313.0985948276583,859.5504479319645"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc1000_48_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_48_1"
+      d="M311.348239814057,961.8864785056812 A1000,1000 0 0,1 341.10600762257445,870.3014864183235" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_48_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc1000_48_2"
+      d="M253.39269023671295,946.3573357995301 A1000,1000 0 0,1 285.09118203274227,848.7994094456055" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_48_2" startOffset="50%">Mulberry</textPath>
+    </text>
+    <path d="M1200,1200 L266.41957350279824,841.6320504546995 A1000,1000 0 0,1 308.9934758116319,746.0095002604537 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_49_0"
+      d="M313.0985948276583,859.5504479319645 A1000,1000 0 0,1 353.5438020210503,768.7090252474311" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_49_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_49_1"
+      d="M341.10600762257445,870.3014864183235 A1000,1000 0 0,1 380.2739977467013,782.3287402396174" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_49_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc1000_49_2"
+      d="M285.09118203274227,848.7994094456055 A1000,1000 0 0,1 326.81360629539927,755.0893102552448" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_49_2" startOffset="50%">Mulberry</textPath>
+    </text>
+    <path d="M1200,1200 L308.9934758116319,746.0095002604537 A1000,1000 0 0,1 361.32943205457593,655.360964984973 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_50_0"
+      d="M353.5438020210503,768.7090252474311 A1000,1000 0 0,1 403.2629604518471,682.5929167357243" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_50_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_50_1"
+      d="M380.2739977467013,782.3287402396174 A1000,1000 0 0,1 428.42307749020983,698.9320877861751" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_50_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc1000_50_2"
+      d="M326.81360629539927,755.0893102552448 A1000,1000 0 0,1 378.1028434134844,666.2537456852734" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_50_2" startOffset="50%">Rapids</textPath>
+    </text>
+    <path d="M1200,1200 L361.32943205457593,655.360964984973 A1000,1000 0 0,1 422.8540385430292,570.6796089501623 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_51_0"
+      d="M403.2629604518471,682.5929167357243 A1000,1000 0 0,1 461.7113366158777,602.1456285026543" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_51_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_51_1"
+      d="M428.42307749020983,698.9320877861751 A1000,1000 0 0,1 485.0257154595869,621.0252402341494" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_51_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc1000_51_2"
+      d="M378.1028434134844,666.2537456852734 A1000,1000 0 0,1 438.39695777216866,583.2660167711591" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_51_2" startOffset="50%">Rapids</textPath>
+    </text>
+    <path d="M1200,1200 L422.8540385430292,570.6796089501623 A1000,1000 0 0,1 492.89321881345234,492.89321881345256 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_52_0"
+      d="M461.7113366158777,602.1456285026543 A1000,1000 0 0,1 528.2485578727797,528.2485578727799" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_52_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_52_1"
+      d="M485.0257154595869,621.0252402341494 A1000,1000 0 0,1 549.4617613083761,549.4617613083764" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_52_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc1000_52_2"
+      d="M438.39695777216866,583.2660167711591 A1000,1000 0 0,1 507.0353544371833,507.0353544371835" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_52_2" startOffset="50%">Desert</textPath>
+    </text>
+    <path d="M1200,1200 L492.89321881345234,492.89321881345256 A1000,1000 0 0,1 570.6796089501628,422.8540385430289 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_53_0"
+      d="M528.2485578727797,528.2485578727799 A1000,1000 0 0,1 602.1456285026547,461.7113366158775" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_53_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc1000_53_1"
+      d="M549.4617613083761,549.4617613083764 A1000,1000 0 0,1 621.0252402341498,485.02571545958654" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_53_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc1000_53_2"
+      d="M507.0353544371833,507.0353544371835 A1000,1000 0 0,1 583.2660167711596,438.3969577721683" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_53_2" startOffset="50%">Desert</textPath>
+    </text>
+    <path d="M1200,1200 L570.6796089501628,422.8540385430289 A1000,1000 0 0,1 655.3609649849731,361.32943205457593 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_54_0"
+      d="M602.1456285026547,461.7113366158775 A1000,1000 0 0,1 682.5929167357244,403.2629604518471" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_54_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_54_1"
+      d="M621.0252402341498,485.02571545958654 A1000,1000 0 0,1 698.9320877861752,428.42307749020983" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_54_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc1000_54_2"
+      d="M583.2660167711596,438.3969577721683 A1000,1000 0 0,1 666.2537456852735,378.1028434134844" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_54_2" startOffset="50%">Sun</textPath>
+    </text>
+    <path d="M1200,1200 L655.3609649849731,361.32943205457593 A1000,1000 0 0,1 746.009500260453,308.99347581163227 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_55_0"
+      d="M682.5929167357244,403.2629604518471 A1000,1000 0 0,1 768.7090252474304,353.5438020210506" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_55_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc1000_55_1"
+      d="M698.9320877861752,428.42307749020983 A1000,1000 0 0,1 782.3287402396168,380.27399774670164" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_55_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc1000_55_2"
+      d="M666.2537456852735,378.1028434134844 A1000,1000 0 0,1 755.0893102552441,326.8136062953996" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_55_2" startOffset="50%">Sun</textPath>
+    </text>
+    <path d="M1200,1200 L746.009500260453,308.99347581163227 A1000,1000 0 0,1 841.6320504546993,266.41957350279836 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_56_0"
+      d="M768.7090252474304,353.5438020210506 A1000,1000 0 0,1 859.5504479319643,313.0985948276584" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_56_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_56_1"
+      d="M782.3287402396168,380.27399774670164 A1000,1000 0 0,1 870.3014864183233,341.10600762257445" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_56_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc1000_56_2"
+      d="M755.0893102552441,326.8136062953996 A1000,1000 0 0,1 848.7994094456053,285.0911820327424" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_56_2" startOffset="50%">Pomegranate</textPath>
+    </text>
+    <path d="M1200,1200 L841.6320504546993,266.41957350279836 A1000,1000 0 0,1 941.1809548974793,234.07417371093163 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_57_0"
+      d="M859.5504479319643,313.0985948276584 A1000,1000 0 0,1 954.1219071526054,282.3704650253851" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_57_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc1000_57_1"
+      d="M870.3014864183233,341.10600762257445 A1000,1000 0 0,1 961.886478505681,311.34823981405714" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_57_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc1000_57_2"
+      d="M848.7994094456053,285.0911820327424 A1000,1000 0 0,1 946.3573357995298,253.39269023671307" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_57_2" startOffset="50%">Pomegranate</textPath>
+    </text>
+    <path d="M1200,1200 L941.1809548974793,234.07417371093163 A1000,1000 0 0,1 1043.565534959769,212.31165940486233 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_58_0"
+      d="M954.1219071526054,282.3704650253851 A1000,1000 0 0,1 1051.3872582117806,261.6960764346193" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_58_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_58_1"
+      d="M961.886478505681,311.34823981405714 A1000,1000 0 0,1 1056.0802921629875,291.3267266524733" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_58_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc1000_58_2"
+      d="M946.3573357995298,253.39269023671307 A1000,1000 0 0,1 1046.6942242605735,232.0654262167651" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_58_2" startOffset="50%">Ocean</textPath>
+    </text>
+    <path d="M1200,1200 L1043.565534959769,212.31165940486233 A1000,1000 0 0,1 1147.6640437570557,201.3704652454262 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc1000_59_0"
+      d="M1051.3872582117806,261.6960764346193 A1000,1000 0 0,1 1150.280841569203,251.30194198315485" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_59_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc1000_59_1"
+      d="M1056.0802921629875,291.3267266524733 A1000,1000 0 0,1 1151.8509202564912,281.2608280257921" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_59_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc1000_59_2"
+      d="M1046.6942242605735,232.0654262167651 A1000,1000 0 0,1 1148.7107628819147,221.34305594051762" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc1000_59_2" startOffset="50%">Ocean</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="900" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1152.8976393813507,301.2334187208836 A900,900 0 0,1 1247.1023606186495,301.2334187208836 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_0_0" d="M1155.514437193498,351.16489545861225 A900,900 0 0,1 1244.4855628065025,351.16489545861225"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_0_0" startOffset="50%">Rat</textPath>
+    </text>
+    <path id="arc900_0_1" d="M1157.0845158807863,381.1237815012495 A900,900 0 0,1 1242.915484119214,381.1237815012495"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_0_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc900_0_2" d="M1153.9443585062097,321.206009415975 A900,900 0 0,1 1246.0556414937907,321.206009415975"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_0_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1247.1023606186495,301.2334187208836 A900,900 0 0,1 1340.791018536208,311.080493464376 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_1_0"
+      d="M1244.4855628065025,351.16489545861225 A900,900 0 0,1 1332.9692952841963,360.46491049413294" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_1_0" startOffset="50%">Ox</textPath>
+    </text>
+    <path id="arc900_1_1" d="M1242.915484119214,381.1237815012495 A900,900 0 0,1 1328.2762613329894,390.095560711987"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_1_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc900_1_2" d="M1246.0556414937907,321.206009415975 A900,900 0 0,1 1337.6623292354031,330.83426027627877"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_1_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1340.791018536208,311.080493464376 A900,900 0 0,1 1432.9371405922686,330.66675633983857 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_2_0" d="M1332.9692952841963,360.46491049413294 A900,900 0 0,1 1419.9961883371427,378.9630476542919"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_2_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc900_2_1" d="M1328.2762613329894,390.095560711987 A900,900 0 0,1 1412.231616984067,407.94082244296396"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_2_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc900_2_2" d="M1337.6623292354031,330.83426027627877 A900,900 0 0,1 1427.7607596902183,349.9852728656199"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_2_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L1432.9371405922686,330.66675633983857 A900,900 0 0,1 1522.5311545907703,359.7776161525185 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_3_0" d="M1419.9961883371427,378.9630476542919 A900,900 0 0,1 1504.6127571135053,406.45663747737854"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_3_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc900_3_1" d="M1412.231616984067,407.94082244296396 A900,900 0 0,1 1493.8617186271463,434.46405027229457"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_3_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc900_3_2" d="M1427.7607596902183,349.9852728656199 A900,900 0 0,1 1515.3637955998643,378.4492246824625"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_3_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L1522.5311545907703,359.7776161525185 A900,900 0 0,1 1608.5914497655922,398.094128230469 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_4_0"
+      d="M1504.6127571135053,406.45663747737854 A900,900 0 0,1 1585.8919247786148,442.64445443988734" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_4_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc900_4_1"
+      d="M1493.8617186271463,434.46405027229457 A900,900 0 0,1 1572.2722097864284,469.37465016553847" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_4_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc900_4_2" d="M1515.3637955998643,378.4492246824625 A900,900 0 0,1 1599.5116397708011,415.9142587142363"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_4_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L1608.5914497655922,398.094128230469 A900,900 0 0,1 1690.1751315135245,445.1964888491185 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_5_0" d="M1585.8919247786148,442.64445443988734 A900,900 0 0,1 1662.943179762773,487.1300172463897"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_5_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc900_5_1" d="M1572.2722097864284,469.37465016553847 A900,900 0 0,1 1646.6040087123224,512.2901342847524"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_5_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc900_5_2" d="M1599.5116397708011,415.9142587142363 A900,900 0 0,1 1679.282350813224,461.96990020802696"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_5_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L1690.1751315135245,445.1964888491185 A900,900 0 0,1 1766.3883519448536,500.5686346887263 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_6_0" d="M1662.943179762773,487.1300172463897 A900,900 0 0,1 1734.922332392362,539.4259327615748"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_6_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc900_6_1" d="M1646.6040087123224,512.2901342847524 A900,900 0 0,1 1716.0427206608667,562.740311605284"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_6_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc900_6_2" d="M1679.282350813224,461.96990020802696 A900,900 0 0,1 1753.801944123857,516.1115539178656"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_6_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L1766.3883519448536,500.5686346887263 A900,900 0 0,1 1836.396103067893,563.6038969321073 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_7_0" d="M1734.922332392362,539.4259327615748 A900,900 0 0,1 1801.0407640085655,598.9592359914346"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_7_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc900_7_1" d="M1716.0427206608667,562.740311605284 A900,900 0 0,1 1779.827560572969,620.1724394270311"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_7_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc900_7_2" d="M1753.801944123857,516.1115539178656 A900,900 0 0,1 1822.2539674441618,577.7460325558383"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_7_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L1836.396103067893,563.6038969321073 A900,900 0 0,1 1899.4313653112738,633.6116480551464 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_8_0" d="M1801.0407640085655,598.9592359914346 A900,900 0 0,1 1860.5740672384254,665.0776676076382"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_8_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc900_8_1" d="M1779.827560572969,620.1724394270311 A900,900 0 0,1 1837.2596883947162,683.9572793391334"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_8_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc900_8_2" d="M1822.2539674441618,577.7460325558383 A900,900 0 0,1 1883.8884460821344,646.1980558761431"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_8_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L1899.4313653112738,633.6116480551464 A900,900 0 0,1 1954.8035111508816,709.8248684864757 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_9_0" d="M1860.5740672384254,665.0776676076382 A900,900 0 0,1 1912.8699827536104,737.0568202372269"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_9_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc900_9_1" d="M1837.2596883947162,683.9572793391334 A900,900 0 0,1 1887.7098657152478,753.3959912876778"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_9_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc900_9_2" d="M1883.8884460821344,646.1980558761431 A900,900 0 0,1 1938.030099791973,720.7176491867762"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_9_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L1954.8035111508816,709.8248684864757 A900,900 0 0,1 2001.9058717695311,791.4085502344079 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_10_0" d="M1912.8699827536104,737.0568202372269 A900,900 0 0,1 1957.3555455601127,814.1080752213852"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_10_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc900_10_1" d="M1887.7098657152478,753.3959912876778 A900,900 0 0,1 1930.6253498344618,827.7277902135717"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_10_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc900_10_2" d="M1938.030099791973,720.7176491867762 A900,900 0 0,1 1984.0857412857638,800.4883602291989"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_10_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L2001.9058717695311,791.4085502344079 A900,900 0 0,1 2040.2223838474815,877.4688454092297 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_11_0" d="M1957.3555455601127,814.1080752213852 A900,900 0 0,1 1993.5433625226215,895.3872428864947"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_11_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc900_11_1" d="M1930.6253498344618,827.7277902135717 A900,900 0 0,1 1965.5359497277054,906.1382813728537"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_11_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc900_11_2" d="M1984.0857412857638,800.4883602291989 A900,900 0 0,1 2021.5507753175375,884.6362044001357"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_11_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L2040.2223838474815,877.4688454092297 A900,900 0 0,1 2069.3332436601613,967.0628594077314 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_12_0" d="M1993.5433625226215,895.3872428864947 A900,900 0 0,1 2021.036952345708,980.0038116628574"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_12_0" startOffset="50%">Rat</textPath>
+    </text>
+    <path id="arc900_12_1" d="M1965.5359497277054,906.1382813728537 A900,900 0 0,1 1992.059177557036,987.768383015933"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_12_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc900_12_2" d="M2021.5507753175375,884.6362044001357 A900,900 0 0,1 2050.0147271343803,972.2392403097817"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_12_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L2069.3332436601613,967.0628594077314 A900,900 0 0,1 2088.919506535624,1059.2089814637923 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_13_0" d="M2021.036952345708,980.0038116628574 A900,900 0 0,1 2039.535089505867,1067.0307047158037"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_13_0" startOffset="50%">Ox</textPath>
+    </text>
+    <path id="arc900_13_1" d="M1992.059177557036,987.768383015933 A900,900 0 0,1 2009.904439288013,1071.7237386670106"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_13_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc900_13_2"
+      d="M2050.0147271343803,972.2392403097817 A900,900 0 0,1 2069.1657397237213,1062.3376707645969" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_13_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L2088.919506535624,1059.2089814637923 A900,900 0 0,1 2098.7665812791165,1152.8976393813505 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_14_0" d="M2039.535089505867,1067.0307047158037 A900,900 0 0,1 2048.835104541388,1155.5144371934978"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_14_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc900_14_1" d="M2009.904439288013,1071.7237386670106 A900,900 0 0,1 2018.8762184987504,1157.084515880786"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_14_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc900_14_2"
+      d="M2069.1657397237213,1062.3376707645969 A900,900 0 0,1 2078.793990584025,1153.9443585062095" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_14_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L2098.7665812791165,1152.8976393813505 A900,900 0 0,1 2098.7665812791165,1247.1023606186495 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_15_0" d="M2048.835104541388,1155.5144371934978 A900,900 0 0,1 2048.835104541388,1244.4855628065022"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_15_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc900_15_1" d="M2018.8762184987504,1157.084515880786 A900,900 0 0,1 2018.8762184987504,1242.915484119214"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_15_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc900_15_2" d="M2078.793990584025,1153.9443585062095 A900,900 0 0,1 2078.793990584025,1246.0556414937905"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_15_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L2098.7665812791165,1247.1023606186495 A900,900 0 0,1 2088.919506535624,1340.7910185362077 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_16_0" d="M2048.835104541388,1244.4855628065022 A900,900 0 0,1 2039.535089505867,1332.9692952841963"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_16_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc900_16_1" d="M2018.8762184987504,1242.915484119214 A900,900 0 0,1 2009.904439288013,1328.2762613329894"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_16_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc900_16_2"
+      d="M2078.793990584025,1246.0556414937905 A900,900 0 0,1 2069.1657397237213,1337.6623292354031" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_16_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L2088.919506535624,1340.7910185362077 A900,900 0 0,1 2069.3332436601613,1432.9371405922686 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_17_0" d="M2039.535089505867,1332.9692952841963 A900,900 0 0,1 2021.036952345708,1419.9961883371427"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_17_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc900_17_1" d="M2009.904439288013,1328.2762613329894 A900,900 0 0,1 1992.059177557036,1412.231616984067"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_17_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc900_17_2"
+      d="M2069.1657397237213,1337.6623292354031 A900,900 0 0,1 2050.0147271343803,1427.7607596902183" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_17_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L2069.3332436601613,1432.9371405922686 A900,900 0 0,1 2040.2223838474815,1522.5311545907703 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_18_0"
+      d="M2021.036952345708,1419.9961883371427 A900,900 0 0,1 1993.5433625226215,1504.6127571135053" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_18_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc900_18_1" d="M1992.059177557036,1412.231616984067 A900,900 0 0,1 1965.5359497277054,1493.8617186271463"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_18_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc900_18_2"
+      d="M2050.0147271343803,1427.7607596902183 A900,900 0 0,1 2021.5507753175375,1515.3637955998643" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_18_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L2040.2223838474815,1522.5311545907703 A900,900 0 0,1 2001.9058717695311,1608.5914497655922 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_19_0"
+      d="M1993.5433625226215,1504.6127571135053 A900,900 0 0,1 1957.3555455601127,1585.8919247786148" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_19_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc900_19_1"
+      d="M1965.5359497277054,1493.8617186271463 A900,900 0 0,1 1930.6253498344618,1572.2722097864284" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_19_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc900_19_2"
+      d="M2021.5507753175375,1515.3637955998643 A900,900 0 0,1 1984.0857412857638,1599.5116397708011" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_19_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L2001.9058717695311,1608.5914497655922 A900,900 0 0,1 1954.8035111508816,1690.1751315135243 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_20_0"
+      d="M1957.3555455601127,1585.8919247786148 A900,900 0 0,1 1912.8699827536104,1662.943179762773" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_20_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc900_20_1"
+      d="M1930.6253498344618,1572.2722097864284 A900,900 0 0,1 1887.7098657152478,1646.6040087123222" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_20_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc900_20_2"
+      d="M1984.0857412857638,1599.5116397708011 A900,900 0 0,1 1938.030099791973,1679.2823508132237" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_20_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1954.8035111508816,1690.1751315135243 A900,900 0 0,1 1899.4313653112738,1766.3883519448536 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_21_0"
+      d="M1912.8699827536104,1662.943179762773 A900,900 0 0,1 1860.5740672384254,1734.9223323923618" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_21_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc900_21_1"
+      d="M1887.7098657152478,1646.6040087123222 A900,900 0 0,1 1837.2596883947162,1716.0427206608665" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_21_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc900_21_2"
+      d="M1938.030099791973,1679.2823508132237 A900,900 0 0,1 1883.8884460821344,1753.8019441238569" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_21_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1899.4313653112738,1766.3883519448536 A900,900 0 0,1 1836.396103067893,1836.3961030678927 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_22_0"
+      d="M1860.5740672384254,1734.9223323923618 A900,900 0 0,1 1801.0407640085655,1801.0407640085655" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_22_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc900_22_1"
+      d="M1837.2596883947162,1716.0427206608665 A900,900 0 0,1 1779.827560572969,1779.8275605729689" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_22_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc900_22_2"
+      d="M1883.8884460821344,1753.8019441238569 A900,900 0 0,1 1822.2539674441618,1822.2539674441618" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_22_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L1836.396103067893,1836.3961030678927 A900,900 0 0,1 1766.3883519448536,1899.4313653112736 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_23_0"
+      d="M1801.0407640085655,1801.0407640085655 A900,900 0 0,1 1734.922332392362,1860.5740672384252" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_23_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc900_23_1" d="M1779.827560572969,1779.8275605729689 A900,900 0 0,1 1716.0427206608667,1837.259688394716"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_23_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc900_23_2"
+      d="M1822.2539674441618,1822.2539674441618 A900,900 0 0,1 1753.801944123857,1883.8884460821344" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_23_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L1766.3883519448536,1899.4313653112736 A900,900 0 0,1 1690.1751315135245,1954.8035111508816 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_24_0" d="M1734.922332392362,1860.5740672384252 A900,900 0 0,1 1662.943179762773,1912.8699827536102"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_24_0" startOffset="50%">Rat</textPath>
+    </text>
+    <path id="arc900_24_1"
+      d="M1716.0427206608667,1837.259688394716 A900,900 0 0,1 1646.6040087123224,1887.7098657152476" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_24_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc900_24_2" d="M1753.801944123857,1883.8884460821344 A900,900 0 0,1 1679.282350813224,1938.030099791973"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_24_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L1690.1751315135245,1954.8035111508816 A900,900 0 0,1 1608.5914497655922,2001.9058717695311 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_25_0"
+      d="M1662.943179762773,1912.8699827536102 A900,900 0 0,1 1585.8919247786148,1957.3555455601127" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_25_0" startOffset="50%">Ox</textPath>
+    </text>
+    <path id="arc900_25_1"
+      d="M1646.6040087123224,1887.7098657152476 A900,900 0 0,1 1572.2722097864284,1930.6253498344615" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_25_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc900_25_2" d="M1679.282350813224,1938.030099791973 A900,900 0 0,1 1599.5116397708011,1984.0857412857636"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_25_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L1608.5914497655922,2001.9058717695311 A900,900 0 0,1 1522.5311545907703,2040.2223838474815 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_26_0"
+      d="M1585.8919247786148,1957.3555455601127 A900,900 0 0,1 1504.6127571135053,1993.5433625226215" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_26_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc900_26_1"
+      d="M1572.2722097864284,1930.6253498344615 A900,900 0 0,1 1493.8617186271463,1965.5359497277054" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_26_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc900_26_2"
+      d="M1599.5116397708011,1984.0857412857636 A900,900 0 0,1 1515.3637955998643,2021.5507753175375" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_26_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L1522.5311545907703,2040.2223838474815 A900,900 0 0,1 1432.9371405922686,2069.3332436601613 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_27_0"
+      d="M1504.6127571135053,1993.5433625226215 A900,900 0 0,1 1419.9961883371427,2021.036952345708" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_27_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc900_27_1" d="M1493.8617186271463,1965.5359497277054 A900,900 0 0,1 1412.231616984067,1992.059177557036"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_27_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc900_27_2"
+      d="M1515.3637955998643,2021.5507753175375 A900,900 0 0,1 1427.7607596902183,2050.0147271343803" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_27_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L1432.9371405922686,2069.3332436601613 A900,900 0 0,1 1340.791018536208,2088.919506535624 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_28_0" d="M1419.9961883371427,2021.036952345708 A900,900 0 0,1 1332.9692952841963,2039.535089505867"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_28_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc900_28_1" d="M1412.231616984067,1992.059177557036 A900,900 0 0,1 1328.2762613329894,2009.904439288013"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_28_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc900_28_2"
+      d="M1427.7607596902183,2050.0147271343803 A900,900 0 0,1 1337.6623292354031,2069.1657397237213" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_28_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L1340.791018536208,2088.919506535624 A900,900 0 0,1 1247.1023606186495,2098.7665812791165 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_29_0" d="M1332.9692952841963,2039.535089505867 A900,900 0 0,1 1244.4855628065025,2048.835104541388"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_29_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc900_29_1" d="M1328.2762613329894,2009.904439288013 A900,900 0 0,1 1242.915484119214,2018.8762184987504"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_29_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc900_29_2"
+      d="M1337.6623292354031,2069.1657397237213 A900,900 0 0,1 1246.0556414937907,2078.793990584025" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_29_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L1247.1023606186495,2098.7665812791165 A900,900 0 0,1 1152.8976393813507,2098.7665812791165 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_30_0" d="M1244.4855628065025,2048.835104541388 A900,900 0 0,1 1155.514437193498,2048.835104541388"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_30_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc900_30_1"
+      d="M1242.915484119214,2018.8762184987504 A900,900 0 0,1 1157.0845158807863,2018.8762184987504" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_30_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc900_30_2" d="M1246.0556414937907,2078.793990584025 A900,900 0 0,1 1153.9443585062097,2078.793990584025"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_30_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1152.8976393813507,2098.7665812791165 A900,900 0 0,1 1059.208981463792,2088.919506535624 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_31_0" d="M1155.514437193498,2048.835104541388 A900,900 0 0,1 1067.0307047158035,2039.535089505867"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_31_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc900_31_1"
+      d="M1157.0845158807863,2018.8762184987504 A900,900 0 0,1 1071.7237386670106,2009.9044392880128" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_31_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc900_31_2"
+      d="M1153.9443585062097,2078.793990584025 A900,900 0 0,1 1062.3376707645966,2069.1657397237213" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_31_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L1059.208981463792,2088.919506535624 A900,900 0 0,1 967.0628594077313,2069.3332436601613 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_32_0" d="M1067.0307047158035,2039.535089505867 A900,900 0 0,1 980.0038116628573,2021.036952345708"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_32_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc900_32_1" d="M1071.7237386670106,2009.9044392880128 A900,900 0 0,1 987.7683830159328,1992.059177557036"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_32_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc900_32_2"
+      d="M1062.3376707645966,2069.1657397237213 A900,900 0 0,1 972.2392403097816,2050.0147271343803" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_32_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L967.0628594077313,2069.3332436601613 A900,900 0 0,1 877.4688454092297,2040.2223838474815 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_33_0" d="M980.0038116628573,2021.036952345708 A900,900 0 0,1 895.3872428864947,1993.5433625226215"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_33_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc900_33_1" d="M987.7683830159328,1992.059177557036 A900,900 0 0,1 906.1382813728537,1965.5359497277054"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_33_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc900_33_2" d="M972.2392403097816,2050.0147271343803 A900,900 0 0,1 884.6362044001357,2021.5507753175375"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_33_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L877.4688454092297,2040.2223838474815 A900,900 0 0,1 791.408550234408,2001.9058717695311 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_34_0" d="M895.3872428864947,1993.5433625226215 A900,900 0 0,1 814.1080752213853,1957.3555455601127"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_34_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc900_34_1" d="M906.1382813728537,1965.5359497277054 A900,900 0 0,1 827.7277902135718,1930.6253498344618"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_34_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc900_34_2" d="M884.6362044001357,2021.5507753175375 A900,900 0 0,1 800.4883602291989,1984.0857412857638"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_34_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L791.408550234408,2001.9058717695311 A900,900 0 0,1 709.8248684864757,1954.8035111508816 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_35_0" d="M814.1080752213853,1957.3555455601127 A900,900 0 0,1 737.0568202372269,1912.8699827536102"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_35_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc900_35_1" d="M827.7277902135718,1930.6253498344618 A900,900 0 0,1 753.3959912876778,1887.7098657152476"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_35_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc900_35_2" d="M800.4883602291989,1984.0857412857638 A900,900 0 0,1 720.7176491867762,1938.030099791973"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_35_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L709.8248684864757,1954.8035111508816 A900,900 0 0,1 633.6116480551465,1899.431365311274 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_36_0" d="M737.0568202372269,1912.8699827536102 A900,900 0 0,1 665.0776676076383,1860.5740672384254"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_36_0" startOffset="50%">Rat</textPath>
+    </text>
+    <path id="arc900_36_1" d="M753.3959912876778,1887.7098657152476 A900,900 0 0,1 683.9572793391334,1837.2596883947162"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_36_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc900_36_2" d="M720.7176491867762,1938.030099791973 A900,900 0 0,1 646.1980558761431,1883.8884460821346"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_36_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L633.6116480551465,1899.431365311274 A900,900 0 0,1 563.6038969321073,1836.396103067893 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_37_0" d="M665.0776676076383,1860.5740672384254 A900,900 0 0,1 598.9592359914346,1801.0407640085655"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_37_0" startOffset="50%">Ox</textPath>
+    </text>
+    <path id="arc900_37_1" d="M683.9572793391334,1837.2596883947162 A900,900 0 0,1 620.1724394270311,1779.827560572969"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_37_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc900_37_2" d="M646.1980558761431,1883.8884460821346 A900,900 0 0,1 577.7460325558383,1822.2539674441618"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_37_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L563.6038969321073,1836.396103067893 A900,900 0 0,1 500.56863468872643,1766.388351944854 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_38_0" d="M598.9592359914346,1801.0407640085655 A900,900 0 0,1 539.4259327615749,1734.922332392362"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_38_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc900_38_1" d="M620.1724394270311,1779.827560572969 A900,900 0 0,1 562.7403116052841,1716.042720660867"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_38_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc900_38_2" d="M577.7460325558383,1822.2539674441618 A900,900 0 0,1 516.1115539178658,1753.801944123857"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_38_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L500.56863468872643,1766.388351944854 A900,900 0 0,1 445.1964888491183,1690.1751315135243 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_39_0" d="M539.4259327615749,1734.922332392362 A900,900 0 0,1 487.13001724638946,1662.9431797627728"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_39_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc900_39_1" d="M562.7403116052841,1716.042720660867 A900,900 0 0,1 512.2901342847522,1646.6040087123222"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_39_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc900_39_2" d="M516.1115539178658,1753.801944123857 A900,900 0 0,1 461.96990020802673,1679.2823508132237"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_39_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L445.1964888491183,1690.1751315135243 A900,900 0 0,1 398.094128230469,1608.5914497655922 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_40_0"
+      d="M487.13001724638946,1662.9431797627728 A900,900 0 0,1 442.64445443988734,1585.8919247786148" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_40_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc900_40_1"
+      d="M512.2901342847522,1646.6040087123222 A900,900 0 0,1 469.37465016553847,1572.2722097864284" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_40_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc900_40_2"
+      d="M461.96990020802673,1679.2823508132237 A900,900 0 0,1 415.9142587142363,1599.5116397708011" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_40_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L398.094128230469,1608.5914497655922 A900,900 0 0,1 359.7776161525185,1522.5311545907703 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_41_0"
+      d="M442.64445443988734,1585.8919247786148 A900,900 0 0,1 406.45663747737854,1504.6127571135053" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_41_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc900_41_1"
+      d="M469.37465016553847,1572.2722097864284 A900,900 0 0,1 434.46405027229457,1493.8617186271463" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_41_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc900_41_2" d="M415.9142587142363,1599.5116397708011 A900,900 0 0,1 378.4492246824625,1515.3637955998643"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_41_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L359.7776161525185,1522.5311545907703 A900,900 0 0,1 330.66675633983857,1432.9371405922689 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_42_0"
+      d="M406.45663747737854,1504.6127571135053 A900,900 0 0,1 378.96304765429204,1419.996188337143" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_42_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc900_42_1"
+      d="M434.46405027229457,1493.8617186271463 A900,900 0 0,1 407.9408224429641,1412.2316169840672" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_42_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc900_42_2" d="M378.4492246824625,1515.3637955998643 A900,900 0 0,1 349.98527286562,1427.7607596902185"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_42_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L330.66675633983857,1432.9371405922689 A900,900 0 0,1 311.0804934643761,1340.791018536208 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_43_0"
+      d="M378.96304765429204,1419.996188337143 A900,900 0 0,1 360.46491049413294,1332.9692952841963" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_43_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc900_43_1" d="M407.9408224429641,1412.2316169840672 A900,900 0 0,1 390.0955607119871,1328.2762613329894"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_43_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc900_43_2" d="M349.98527286562,1427.7607596902185 A900,900 0 0,1 330.8342602762789,1337.6623292354034"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_43_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L311.0804934643761,1340.791018536208 A900,900 0 0,1 301.2334187208836,1247.1023606186495 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_44_0"
+      d="M360.46491049413294,1332.9692952841963 A900,900 0 0,1 351.16489545861225,1244.4855628065022" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_44_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc900_44_1" d="M390.0955607119871,1328.2762613329894 A900,900 0 0,1 381.1237815012495,1242.915484119214"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_44_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc900_44_2" d="M330.8342602762789,1337.6623292354034 A900,900 0 0,1 321.206009415975,1246.0556414937905"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_44_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L301.2334187208836,1247.1023606186495 A900,900 0 0,1 301.2334187208836,1152.8976393813507 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_45_0"
+      d="M351.16489545861225,1244.4855628065022 A900,900 0 0,1 351.16489545861225,1155.514437193498" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_45_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc900_45_1" d="M381.1237815012495,1242.915484119214 A900,900 0 0,1 381.1237815012495,1157.0845158807863"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_45_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc900_45_2" d="M321.206009415975,1246.0556414937905 A900,900 0 0,1 321.206009415975,1153.9443585062097"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_45_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L301.2334187208836,1152.8976393813507 A900,900 0 0,1 311.080493464376,1059.2089814637923 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_46_0" d="M351.16489545861225,1155.514437193498 A900,900 0 0,1 360.46491049413294,1067.030704715804"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_46_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc900_46_1" d="M381.1237815012495,1157.0845158807863 A900,900 0 0,1 390.095560711987,1071.7237386670108"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_46_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc900_46_2" d="M321.206009415975,1153.9443585062097 A900,900 0 0,1 330.83426027627877,1062.337670764597"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_46_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L311.080493464376,1059.2089814637923 A900,900 0 0,1 330.66675633983846,967.0628594077317 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_47_0" d="M360.46491049413294,1067.030704715804 A900,900 0 0,1 378.9630476542918,980.0038116628577"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_47_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc900_47_1" d="M390.095560711987,1071.7237386670108 A900,900 0 0,1 407.94082244296385,987.7683830159333"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_47_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc900_47_2" d="M330.83426027627877,1062.337670764597 A900,900 0 0,1 349.9852728656198,972.2392403097821"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_47_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L330.66675633983846,967.0628594077317 A900,900 0 0,1 359.7776161525185,877.4688454092296 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_48_0" d="M378.9630476542918,980.0038116628577 A900,900 0 0,1 406.45663747737854,895.3872428864946"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_48_0" startOffset="50%">Rat</textPath>
+    </text>
+    <path id="arc900_48_1" d="M407.94082244296385,987.7683830159333 A900,900 0 0,1 434.46405027229457,906.1382813728537"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_48_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc900_48_2" d="M349.9852728656198,972.2392403097821 A900,900 0 0,1 378.4492246824625,884.6362044001356"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_48_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L359.7776161525185,877.4688454092296 A900,900 0 0,1 398.09412823046864,791.4085502344084 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_49_0" d="M406.45663747737854,895.3872428864946 A900,900 0 0,1 442.6444544398871,814.1080752213857"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_49_0" startOffset="50%">Ox</textPath>
+    </text>
+    <path id="arc900_49_1" d="M434.46405027229457,906.1382813728537 A900,900 0 0,1 469.3746501655381,827.727790213572"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_49_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc900_49_2" d="M378.4492246824625,884.6362044001356 A900,900 0 0,1 415.9142587142361,800.4883602291993"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_49_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L398.09412823046864,791.4085502344084 A900,900 0 0,1 445.1964888491184,709.8248684864757 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_50_0" d="M442.6444544398871,814.1080752213857 A900,900 0 0,1 487.13001724638957,737.0568202372269"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_50_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc900_50_1" d="M469.3746501655381,827.727790213572 A900,900 0 0,1 512.2901342847523,753.3959912876778"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_50_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc900_50_2" d="M415.9142587142361,800.4883602291993 A900,900 0 0,1 461.96990020802684,720.7176491867762"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_50_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L445.1964888491184,709.8248684864757 A900,900 0 0,1 500.5686346887263,633.6116480551461 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_51_0" d="M487.13001724638957,737.0568202372269 A900,900 0 0,1 539.4259327615748,665.077667607638"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_51_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc900_51_1" d="M512.2901342847523,753.3959912876778 A900,900 0 0,1 562.740311605284,683.9572793391332"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_51_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc900_51_2" d="M461.96990020802684,720.7176491867762 A900,900 0 0,1 516.1115539178656,646.1980558761429"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_51_2" startOffset="50%">Wood</textPath>
+    </text>
+    <path d="M1200,1200 L500.5686346887263,633.6116480551461 A900,900 0 0,1 563.6038969321071,563.6038969321073 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_52_0" d="M539.4259327615748,665.077667607638 A900,900 0 0,1 598.9592359914345,598.9592359914346"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_52_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc900_52_1" d="M562.740311605284,683.9572793391332 A900,900 0 0,1 620.1724394270309,620.1724394270311"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_52_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc900_52_2" d="M516.1115539178656,646.1980558761429 A900,900 0 0,1 577.746032555838,577.7460325558383"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_52_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L563.6038969321071,563.6038969321073 A900,900 0 0,1 633.6116480551466,500.568634688726 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_53_0" d="M598.9592359914345,598.9592359914346 A900,900 0 0,1 665.0776676076384,539.4259327615746"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_53_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc900_53_1" d="M620.1724394270309,620.1724394270311 A900,900 0 0,1 683.9572793391335,562.7403116052836"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_53_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc900_53_2" d="M577.746032555838,577.7460325558383 A900,900 0 0,1 646.1980558761433,516.1115539178654"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_53_2" startOffset="50%">Fire</textPath>
+    </text>
+    <path d="M1200,1200 L633.6116480551466,500.568634688726 A900,900 0 0,1 709.8248684864757,445.1964888491184 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_54_0" d="M665.0776676076384,539.4259327615746 A900,900 0 0,1 737.0568202372272,487.13001724638957"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_54_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc900_54_1" d="M683.9572793391335,562.7403116052836 A900,900 0 0,1 753.3959912876778,512.2901342847523"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_54_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc900_54_2" d="M646.1980558761433,516.1115539178654 A900,900 0 0,1 720.7176491867763,461.96990020802684"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_54_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L709.8248684864757,445.1964888491184 A900,900 0 0,1 791.4085502344078,398.094128230469 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_55_0" d="M737.0568202372272,487.13001724638957 A900,900 0 0,1 814.1080752213852,442.64445443988734"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_55_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc900_55_1" d="M753.3959912876778,512.2901342847523 A900,900 0 0,1 827.7277902135716,469.37465016553847"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_55_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc900_55_2" d="M720.7176491867763,461.96990020802684 A900,900 0 0,1 800.4883602291986,415.9142587142363"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_55_2" startOffset="50%">Earth</textPath>
+    </text>
+    <path d="M1200,1200 L791.4085502344078,398.094128230469 A900,900 0 0,1 877.4688454092293,359.7776161525185 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_56_0" d="M814.1080752213852,442.64445443988734 A900,900 0 0,1 895.3872428864944,406.45663747737865"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_56_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc900_56_1" d="M827.7277902135716,469.37465016553847 A900,900 0 0,1 906.1382813728535,434.4640502722947"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_56_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc900_56_2" d="M800.4883602291986,415.9142587142363 A900,900 0 0,1 884.6362044001354,378.4492246824626"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_56_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L877.4688454092293,359.7776161525185 A900,900 0 0,1 967.0628594077314,330.66675633983857 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_57_0" d="M895.3872428864944,406.45663747737865 A900,900 0 0,1 980.0038116628575,378.9630476542919"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_57_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc900_57_1" d="M906.1382813728535,434.4640502722947 A900,900 0 0,1 987.7683830159331,407.94082244296396"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_57_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc900_57_2" d="M884.6362044001354,378.4492246824626 A900,900 0 0,1 972.2392403097818,349.9852728656199"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_57_2" startOffset="50%">Metal</textPath>
+    </text>
+    <path d="M1200,1200 L967.0628594077314,330.66675633983857 A900,900 0 0,1 1059.208981463792,311.0804934643761 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_58_0" d="M980.0038116628575,378.9630476542919 A900,900 0 0,1 1067.0307047158035,360.46491049413294"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_58_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc900_58_1" d="M987.7683830159331,407.94082244296396 A900,900 0 0,1 1071.7237386670106,390.0955607119871"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_58_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc900_58_2" d="M972.2392403097818,349.9852728656199 A900,900 0 0,1 1062.3376707645966,330.8342602762789"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_58_2" startOffset="50%">Water</textPath>
+    </text>
+    <path d="M1200,1200 L1059.208981463792,311.0804934643761 A900,900 0 0,1 1152.89763938135,301.2334187208836 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc900_59_0"
+      d="M1067.0307047158035,360.46491049413294 A900,900 0 0,1 1155.5144371934973,351.16489545861225" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc900_59_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc900_59_1" d="M1071.7237386670106,390.0955607119871 A900,900 0 0,1 1157.0845158807856,381.1237815012495"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_59_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc900_59_2" d="M1062.3376707645966,330.8342602762789 A900,900 0 0,1 1153.944358506209,321.206009415975"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc900_59_2" startOffset="50%">Water</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="800" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1110.4284191173538,405.03023208540594 A800,800 0 0,1 1289.5715808826462,405.03023208540594 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_0_0"
+      d="M1116.0266429225192,454.71584258006806 A800,800 0 0,1 1283.9733570774808,454.71584258006806" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_0_0" startOffset="50%">日 Yang</textPath>
+    </text>
+    <path id="arc800_0_1" d="M1119.3855772056183,484.5272088768653 A800,800 0 0,1 1280.6144227943817,484.5272088768653"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_0_1" startOffset="50%">🐁Muroidea</textPath>
+    </text>
+    <path id="arc800_0_2" d="M1112.66770863942,424.9044762832708 A800,800 0 0,1 1287.3322913605803,424.9044762832708"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_0_2" startOffset="50%">Emptiness</textPath>
+    </text>
+    <path d="M1200,1200 L1289.5715808826462,405.03023208540594 A800,800 0 0,1 1464.2232495641338,444.8933357533059 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_1_0" d="M1283.9733570774808,454.71584258006806 A800,800 0 0,1 1447.7092964663755,492.0875022687243"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_1_0" startOffset="50%">土 Soil</textPath>
+    </text>
+    <path id="arc800_1_1" d="M1280.6144227943817,484.5272088768653 A800,800 0 0,1 1437.8009246077204,520.4040021779754"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_1_1" startOffset="50%">Bat</textPath>
+    </text>
+    <path id="arc800_1_2" d="M1287.3322913605803,424.9044762832708 A800,800 0 0,1 1457.6176683250303,463.7710023594733"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_1_2" startOffset="50%">Girl</textPath>
+    </text>
+    <path d="M1200,1200 L1464.2232495641338,444.8933357533059 A800,800 0 0,1 1625.6256612122693,522.6206406173726 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_2_0" d="M1447.7092964663755,492.0875022687243 A800,800 0 0,1 1599.0240573865024,564.9568505787868"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_2_0" startOffset="50%">金 Gold</textPath>
+    </text>
+    <path id="arc800_2_1" d="M1437.8009246077204,520.4040021779754 A800,800 0 0,1 1583.0630950910422,590.3585765556353"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_2_1" startOffset="50%">🐃Bovini</textPath>
+    </text>
+    <path id="arc800_2_2" d="M1457.6176683250303,463.7710023594733 A800,800 0 0,1 1614.9850196819625,539.5551246019382"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_2_2" startOffset="50%">Ox</textPath>
+    </text>
+    <path d="M1200,1200 L1625.6256612122693,522.6206406173726 A800,800 0 0,1 1765.685424949238,634.3145750507621 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_3_0" d="M1599.0240573865024,564.9568505787868 A800,800 0 0,1 1730.3300858899106,669.6699141100894"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_3_0" startOffset="50%">木 Wood</textPath>
+    </text>
+    <path id="arc800_3_1" d="M1583.0630950910422,590.3585765556353 A800,800 0 0,1 1709.1168824543142,690.8831175456858"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_3_1" startOffset="50%">Xiezhi</textPath>
+    </text>
+    <path id="arc800_3_2" d="M1614.9850196819625,539.5551246019382 A800,800 0 0,1 1751.543289325507,648.456710674493"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_3_2" startOffset="50%">Dipper</textPath>
+    </text>
+    <path d="M1200,1200 L1765.685424949238,634.3145750507621 A800,800 0 0,1 1877.3793593826274,774.3743387877308 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_4_0" d="M1730.3300858899106,669.6699141100894 A800,800 0 0,1 1835.0431494212132,800.9759426134976"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_4_0" startOffset="50%">水 Water</textPath>
+    </text>
+    <path id="arc800_4_1" d="M1709.1168824543142,690.8831175456858 A800,800 0 0,1 1809.6414234443646,816.9369049089578"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_4_1" startOffset="50%">Leopard</textPath>
+    </text>
+    <path id="arc800_4_2" d="M1751.543289325507,648.456710674493 A800,800 0 0,1 1860.4448753980619,785.0149803180375"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_4_2" startOffset="50%">Winnowing Basket</textPath>
+    </text>
+    <path d="M1200,1200 L1877.3793593826274,774.3743387877308 A800,800 0 0,1 1955.106664246694,935.7767504358662 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_5_0" d="M1835.0431494212132,800.9759426134976 A800,800 0 0,1 1907.9124977312758,952.2907035336247"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_5_0" startOffset="50%">火 Fire</textPath>
+    </text>
+    <path id="arc800_5_1" d="M1809.6414234443646,816.9369049089578 A800,800 0 0,1 1879.5959978220246,962.1990753922796"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_5_1" startOffset="50%">🐅Tiger</textPath>
+    </text>
+    <path id="arc800_5_2" d="M1860.4448753980619,785.0149803180375 A800,800 0 0,1 1936.2289976405268,942.3823316749697"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_5_2" startOffset="50%">Tail</textPath>
+    </text>
+    <path d="M1200,1200 L1955.106664246694,935.7767504358662 A800,800 0 0,1 1994.969767914594,1110.4284191173538 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_6_0" d="M1907.9124977312758,952.2907035336247 A800,800 0 0,1 1945.284157419932,1116.0266429225192"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_6_0" startOffset="50%">月 Yin</textPath>
+    </text>
+    <path id="arc800_6_1" d="M1879.5959978220246,962.1990753922796 A800,800 0 0,1 1915.4727911231348,1119.3855772056183"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_6_1" startOffset="50%">Fox</textPath>
+    </text>
+    <path id="arc800_6_2" d="M1936.2289976405268,942.3823316749697 A800,800 0 0,1 1975.095523716729,1112.6677086394197"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_6_2" startOffset="50%">Heart</textPath>
+    </text>
+    <path d="M1200,1200 L1994.969767914594,1110.4284191173538 A800,800 0 0,1 1994.969767914594,1289.5715808826462 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_7_0" d="M1945.284157419932,1116.0266429225192 A800,800 0 0,1 1945.284157419932,1283.9733570774808"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_7_0" startOffset="50%">日 Yang</textPath>
+    </text>
+    <path id="arc800_7_1"
+      d="M1915.4727911231348,1119.3855772056183 A800,800 0 0,1 1915.4727911231348,1280.6144227943817" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_7_1" startOffset="50%">🐈Cat</textPath>
+    </text>
+    <path id="arc800_7_2" d="M1975.095523716729,1112.6677086394197 A800,800 0 0,1 1975.095523716729,1287.3322913605803"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_7_2" startOffset="50%">Room</textPath>
+    </text>
+    <path d="M1200,1200 L1994.969767914594,1289.5715808826462 A800,800 0 0,1 1955.106664246694,1464.2232495641338 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_8_0" d="M1945.284157419932,1283.9733570774808 A800,800 0 0,1 1907.9124977312758,1447.7092964663755"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_8_0" startOffset="50%">土 Soil</textPath>
+    </text>
+    <path id="arc800_8_1"
+      d="M1915.4727911231348,1280.6144227943817 A800,800 0 0,1 1879.5959978220246,1437.8009246077204" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_8_1" startOffset="50%">Racoon dog</textPath>
+    </text>
+    <path id="arc800_8_2" d="M1975.095523716729,1287.3322913605803 A800,800 0 0,1 1936.2289976405268,1457.6176683250303"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_8_2" startOffset="50%">Root</textPath>
+    </text>
+    <path d="M1200,1200 L1955.106664246694,1464.2232495641338 A800,800 0 0,1 1877.3793593826272,1625.6256612122693 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_9_0" d="M1907.9124977312758,1447.7092964663755 A800,800 0 0,1 1835.043149421213,1599.0240573865026"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_9_0" startOffset="50%">金 Gold</textPath>
+    </text>
+    <path id="arc800_9_1"
+      d="M1879.5959978220246,1437.8009246077204 A800,800 0 0,1 1809.6414234443646,1583.0630950910424" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_9_1" startOffset="50%">🐉Dragon</textPath>
+    </text>
+    <path id="arc800_9_2"
+      d="M1936.2289976405268,1457.6176683250303 A800,800 0 0,1 1860.4448753980616,1614.9850196819625" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_9_2" startOffset="50%">Neck</textPath>
+    </text>
+    <path d="M1200,1200 L1877.3793593826272,1625.6256612122693 A800,800 0 0,1 1765.6854249492378,1765.6854249492383 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_10_0"
+      d="M1835.043149421213,1599.0240573865026 A800,800 0 0,1 1730.3300858899104,1730.3300858899108" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_10_0" startOffset="50%">木 Wood</textPath>
+    </text>
+    <path id="arc800_10_1"
+      d="M1809.6414234443646,1583.0630950910424 A800,800 0 0,1 1709.116882454314,1709.1168824543145" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_10_1" startOffset="50%">Jiaolong</textPath>
+    </text>
+    <path id="arc800_10_2"
+      d="M1860.4448753980616,1614.9850196819625 A800,800 0 0,1 1751.543289325507,1751.5432893255074" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_10_2" startOffset="50%">Horn</textPath>
+    </text>
+    <path d="M1200,1200 L1765.6854249492378,1765.6854249492383 A800,800 0 0,1 1625.6256612122693,1877.3793593826274 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_11_0"
+      d="M1730.3300858899104,1730.3300858899108 A800,800 0 0,1 1599.0240573865024,1835.0431494212132" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_11_0" startOffset="50%">水 Water</textPath>
+    </text>
+    <path id="arc800_11_1"
+      d="M1709.116882454314,1709.1168824543145 A800,800 0 0,1 1583.0630950910422,1809.6414234443646" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_11_1" startOffset="50%">Earthworm</textPath>
+    </text>
+    <path id="arc800_11_2"
+      d="M1751.543289325507,1751.5432893255074 A800,800 0 0,1 1614.9850196819625,1860.4448753980619" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_11_2" startOffset="50%">Chariot</textPath>
+    </text>
+    <path d="M1200,1200 L1625.6256612122693,1877.3793593826274 A800,800 0 0,1 1464.2232495641338,1955.106664246694 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_12_0"
+      d="M1599.0240573865024,1835.0431494212132 A800,800 0 0,1 1447.7092964663755,1907.9124977312758" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_12_0" startOffset="50%">火 Fire</textPath>
+    </text>
+    <path id="arc800_12_1"
+      d="M1583.0630950910422,1809.6414234443646 A800,800 0 0,1 1437.8009246077204,1879.5959978220246" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_12_1" startOffset="50%">🐍Snake</textPath>
+    </text>
+    <path id="arc800_12_2"
+      d="M1614.9850196819625,1860.4448753980619 A800,800 0 0,1 1457.6176683250303,1936.2289976405268" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_12_2" startOffset="50%">Wings</textPath>
+    </text>
+    <path d="M1200,1200 L1464.2232495641338,1955.106664246694 A800,800 0 0,1 1289.5715808826462,1994.969767914594 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_13_0"
+      d="M1447.7092964663755,1907.9124977312758 A800,800 0 0,1 1283.9733570774808,1945.284157419932" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_13_0" startOffset="50%">月 Yin</textPath>
+    </text>
+    <path id="arc800_13_1"
+      d="M1437.8009246077204,1879.5959978220246 A800,800 0 0,1 1280.6144227943817,1915.4727911231348" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_13_1" startOffset="50%">Deer</textPath>
+    </text>
+    <path id="arc800_13_2"
+      d="M1457.6176683250303,1936.2289976405268 A800,800 0 0,1 1287.3322913605803,1975.095523716729" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_13_2" startOffset="50%">Extended Net</textPath>
+    </text>
+    <path d="M1200,1200 L1289.5715808826462,1994.969767914594 A800,800 0 0,1 1110.4284191173533,1994.9697679145938 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_14_0" d="M1283.9733570774808,1945.284157419932 A800,800 0 0,1 1116.026642922519,1945.284157419932"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_14_0" startOffset="50%">日 Yang</textPath>
+    </text>
+    <path id="arc800_14_1"
+      d="M1280.6144227943817,1915.4727911231348 A800,800 0 0,1 1119.3855772056181,1915.4727911231346" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_14_1" startOffset="50%">🐎Horse</textPath>
+    </text>
+    <path id="arc800_14_2" d="M1287.3322913605803,1975.095523716729 A800,800 0 0,1 1112.6677086394195,1975.095523716729"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_14_2" startOffset="50%">Star</textPath>
+    </text>
+    <path d="M1200,1200 L1110.4284191173533,1994.9697679145938 A800,800 0 0,1 935.7767504358662,1955.106664246694 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_15_0" d="M1116.026642922519,1945.284157419932 A800,800 0 0,1 952.2907035336245,1907.9124977312756"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_15_0" startOffset="50%">土 Soil</textPath>
+    </text>
+    <path id="arc800_15_1"
+      d="M1119.3855772056181,1915.4727911231346 A800,800 0 0,1 962.1990753922796,1879.5959978220246" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_15_1" startOffset="50%">Water deer</textPath>
+    </text>
+    <path id="arc800_15_2" d="M1112.6677086394195,1975.095523716729 A800,800 0 0,1 942.3823316749696,1936.2289976405266"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_15_2" startOffset="50%">Willow</textPath>
+    </text>
+    <path d="M1200,1200 L935.7767504358662,1955.106664246694 A800,800 0 0,1 774.3743387877305,1877.3793593826272 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_16_0" d="M952.2907035336245,1907.9124977312756 A800,800 0 0,1 800.9759426134973,1835.043149421213"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_16_0" startOffset="50%">金 Gold</textPath>
+    </text>
+    <path id="arc800_16_1" d="M962.1990753922796,1879.5959978220246 A800,800 0 0,1 816.9369049089574,1809.6414234443646"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_16_1" startOffset="50%">🐐Caprinae</textPath>
+    </text>
+    <path id="arc800_16_2" d="M942.3823316749696,1936.2289976405266 A800,800 0 0,1 785.0149803180373,1860.4448753980614"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_16_2" startOffset="50%">Ghost</textPath>
+    </text>
+    <path d="M1200,1200 L774.3743387877305,1877.3793593826272 A800,800 0 0,1 634.3145750507617,1765.6854249492378 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_17_0" d="M800.9759426134973,1835.043149421213 A800,800 0 0,1 669.6699141100892,1730.3300858899104"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_17_0" startOffset="50%">木 Wood</textPath>
+    </text>
+    <path id="arc800_17_1" d="M816.9369049089574,1809.6414234443646 A800,800 0 0,1 690.8831175456855,1709.116882454314"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_17_1" startOffset="50%">Bian</textPath>
+    </text>
+    <path id="arc800_17_2" d="M785.0149803180373,1860.4448753980614 A800,800 0 0,1 648.4567106744927,1751.543289325507"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_17_2" startOffset="50%">Well</textPath>
+    </text>
+    <path d="M1200,1200 L634.3145750507617,1765.6854249492378 A800,800 0 0,1 522.6206406173725,1625.625661212269 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_18_0" d="M669.6699141100892,1730.3300858899104 A800,800 0 0,1 564.9568505787868,1599.0240573865021"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_18_0" startOffset="50%">水 Water</textPath>
+    </text>
+    <path id="arc800_18_1" d="M690.8831175456855,1709.116882454314 A800,800 0 0,1 590.3585765556353,1583.0630950910422"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_18_1" startOffset="50%">Ape</textPath>
+    </text>
+    <path id="arc800_18_2" d="M648.4567106744927,1751.543289325507 A800,800 0 0,1 539.5551246019382,1614.9850196819623"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_18_2" startOffset="50%">Three Stars</textPath>
+    </text>
+    <path d="M1200,1200 L522.6206406173725,1625.625661212269 A800,800 0 0,1 444.8933357533058,1464.223249564133 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_19_0"
+      d="M564.9568505787868,1599.0240573865021 A800,800 0 0,1 492.08750226872417,1447.7092964663748" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_19_0" startOffset="50%">火 Fire</textPath>
+    </text>
+    <path id="arc800_19_1" d="M590.3585765556353,1583.0630950910422 A800,800 0 0,1 520.4040021779751,1437.8009246077197"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_19_1" startOffset="50%">🐒Monkey</textPath>
+    </text>
+    <path id="arc800_19_2" d="M539.5551246019382,1614.9850196819623 A800,800 0 0,1 463.7710023594731,1457.6176683250296"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_19_2" startOffset="50%">Turtle Beak</textPath>
+    </text>
+    <path d="M1200,1200 L444.8933357533058,1464.223249564133 A800,800 0 0,1 405.03023208540606,1289.5715808826467 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_20_0"
+      d="M492.08750226872417,1447.7092964663748 A800,800 0 0,1 454.71584258006817,1283.9733570774813" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_20_0" startOffset="50%">月 Yin</textPath>
+    </text>
+    <path id="arc800_20_1" d="M520.4040021779751,1437.8009246077197 A800,800 0 0,1 484.5272088768654,1280.614422794382"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_20_1" startOffset="50%">Corvus</textPath>
+    </text>
+    <path id="arc800_20_2" d="M463.7710023594731,1457.6176683250296 A800,800 0 0,1 424.9044762832708,1287.3322913605805"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_20_2" startOffset="50%">Net</textPath>
+    </text>
+    <path d="M1200,1200 L405.03023208540606,1289.5715808826467 A800,800 0 0,1 405.03023208540594,1110.4284191173538 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_21_0"
+      d="M454.71584258006817,1283.9733570774813 A800,800 0 0,1 454.71584258006806,1116.0266429225192" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc800_21_0" startOffset="50%">日 Yang</textPath>
+    </text>
+    <path id="arc800_21_1" d="M484.5272088768654,1280.614422794382 A800,800 0 0,1 484.5272088768653,1119.3855772056183"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_21_1" startOffset="50%">🐓Chicken</textPath>
+    </text>
+    <path id="arc800_21_2" d="M424.9044762832708,1287.3322913605805 A800,800 0 0,1 424.9044762832708,1112.66770863942"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_21_2" startOffset="50%">Hairy Head</textPath>
+    </text>
+    <path d="M1200,1200 L405.03023208540594,1110.4284191173538 A800,800 0 0,1 444.8933357533059,935.7767504358665 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_22_0" d="M454.71584258006806,1116.0266429225192 A800,800 0 0,1 492.0875022687243,952.2907035336248"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_22_0" startOffset="50%">土 Soil</textPath>
+    </text>
+    <path id="arc800_22_1" d="M484.5272088768653,1119.3855772056183 A800,800 0 0,1 520.4040021779754,962.1990753922798"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_22_1" startOffset="50%">Phasianidae</textPath>
+    </text>
+    <path id="arc800_22_2" d="M424.9044762832708,1112.66770863942 A800,800 0 0,1 463.7710023594733,942.3823316749698"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_22_2" startOffset="50%">Stomach</textPath>
+    </text>
+    <path d="M1200,1200 L444.8933357533059,935.7767504358665 A800,800 0 0,1 522.6206406173725,774.3743387877312 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_23_0" d="M492.0875022687243,952.2907035336248 A800,800 0 0,1 564.9568505787867,800.975942613498"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_23_0" startOffset="50%">金 Gold</textPath>
+    </text>
+    <path id="arc800_23_1" d="M520.4040021779754,962.1990753922798 A800,800 0 0,1 590.3585765556352,816.936904908958"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_23_1" startOffset="50%">🐕Dog</textPath>
+    </text>
+    <path id="arc800_23_2" d="M463.7710023594733,942.3823316749698 A800,800 0 0,1 539.5551246019381,785.0149803180379"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_23_2" startOffset="50%">Bonds</textPath>
+    </text>
+    <path d="M1200,1200 L522.6206406173725,774.3743387877312 A800,800 0 0,1 634.3145750507618,634.3145750507621 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_24_0" d="M564.9568505787867,800.975942613498 A800,800 0 0,1 669.6699141100893,669.6699141100894"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_24_0" startOffset="50%">木 Wood</textPath>
+    </text>
+    <path id="arc800_24_1" d="M590.3585765556352,816.936904908958 A800,800 0 0,1 690.8831175456856,690.8831175456858"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_24_1" startOffset="50%">Wolf</textPath>
+    </text>
+    <path id="arc800_24_2" d="M539.5551246019381,785.0149803180379 A800,800 0 0,1 648.4567106744928,648.456710674493"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_24_2" startOffset="50%">Legs</textPath>
+    </text>
+    <path d="M1200,1200 L634.3145750507618,634.3145750507621 A800,800 0 0,1 774.37433878773,522.6206406173732 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_25_0" d="M669.6699141100893,669.6699141100894 A800,800 0 0,1 800.975942613497,564.9568505787873"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_25_0" startOffset="50%">水 Water</textPath>
+    </text>
+    <path id="arc800_25_1" d="M690.8831175456856,690.8831175456858 A800,800 0 0,1 816.9369049089571,590.3585765556359"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_25_1" startOffset="50%">Yayu</textPath>
+    </text>
+    <path id="arc800_25_2" d="M648.4567106744928,648.456710674493 A800,800 0 0,1 785.0149803180368,539.5551246019388"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_25_2" startOffset="50%">Wall</textPath>
+    </text>
+    <path d="M1200,1200 L774.37433878773,522.6206406173732 A800,800 0 0,1 935.7767504358662,444.893335753306 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_26_0" d="M800.975942613497,564.9568505787873 A800,800 0 0,1 952.2907035336245,492.0875022687244"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_26_0" startOffset="50%">火 Fire</textPath>
+    </text>
+    <path id="arc800_26_1" d="M816.9369049089571,590.3585765556359 A800,800 0 0,1 962.1990753922796,520.4040021779754"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_26_1" startOffset="50%">🐖Sus</textPath>
+    </text>
+    <path id="arc800_26_2" d="M785.0149803180368,539.5551246019388 A800,800 0 0,1 942.3823316749695,463.7710023594734"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_26_2" startOffset="50%">Encampment</textPath>
+    </text>
+    <path d="M1200,1200 L935.7767504358662,444.893335753306 A800,800 0 0,1 1110.4284191173535,405.03023208540594 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc800_27_0" d="M952.2907035336245,492.0875022687244 A800,800 0 0,1 1116.026642922519,454.71584258006806"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_27_0" startOffset="50%">月 Yin</textPath>
+    </text>
+    <path id="arc800_27_1" d="M962.1990753922796,520.4040021779754 A800,800 0 0,1 1119.3855772056181,484.5272088768653"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_27_1" startOffset="50%">Swallow</textPath>
+    </text>
+    <path id="arc800_27_2" d="M942.3823316749695,463.7710023594734 A800,800 0 0,1 1112.6677086394197,424.9044762832708"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc800_27_2" startOffset="50%">Roof</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="700" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1200,500 A700,700 0 0,1 1381.1733315717645,523.8519215976522 Z" fill="#2D3F67" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_0_0" d="M1200,550 A700,700 0 0,1 1368.2323793166386,572.1482129121056" fill="none" stroke="none">
+    </path><text>
+      <textPath href="#arc700_0_0" startOffset="50%">Dongzhi</textPath>
+    </text>
+    <path d="M1200,1200 L1381.1733315717645,523.8519215976522 A700,700 0 0,1 1550,593.782217350893 Z" fill="#2D3F67"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_1_0" d="M1368.2323793166386,572.1482129121056 A700,700 0 0,1 1525,637.0834875401149" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_1_0" startOffset="50%">Xiaohan</textPath>
+    </text>
+    <path d="M1200,1200 L1550,593.782217350893 A700,700 0 0,1 1694.9747468305832,705.0252531694168 Z" fill="#2D3F67"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_2_0" d="M1525,637.0834875401149 A700,700 0 0,1 1659.619407771256,740.3805922287441" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_2_0" startOffset="50%">Daihan</textPath>
+    </text>
+    <path d="M1200,1200 L1694.9747468305832,705.0252531694168 A700,700 0 0,1 1806.217782649107,850 Z" fill="#4E784E"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_3_0" d="M1659.619407771256,740.3805922287441 A700,700 0 0,1 1762.9165124598853,875" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_3_0" startOffset="50%">Lichun</textPath>
+    </text>
+    <path d="M1200,1200 L1806.217782649107,850 A700,700 0 0,1 1876.148078402348,1018.8266684282355 Z" fill="#4E784E"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_4_0" d="M1762.9165124598853,875 A700,700 0 0,1 1827.8517870878945,1031.7676206833614" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_4_0" startOffset="50%">Yushui</textPath>
+    </text>
+    <path d="M1200,1200 L1876.148078402348,1018.8266684282355 A700,700 0 0,1 1900,1200 Z" fill="#4E784E" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_5_0" d="M1827.8517870878945,1031.7676206833614 A700,700 0 0,1 1850,1200" fill="none" stroke="none">
+    </path><text>
+      <textPath href="#arc700_5_0" startOffset="50%">Jingzhe</textPath>
+    </text>
+    <path d="M1200,1200 L1900,1200 A700,700 0 0,1 1876.148078402348,1381.1733315717645 Z" fill="#4E784E" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_6_0" d="M1850,1200 A700,700 0 0,1 1827.8517870878945,1368.2323793166386" fill="none" stroke="none">
+    </path><text>
+      <textPath href="#arc700_6_0" startOffset="50%">Chunfen</textPath>
+    </text>
+    <path d="M1200,1200 L1876.148078402348,1381.1733315717645 A700,700 0 0,1 1806.217782649107,1550 Z" fill="#4E784E"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_7_0" d="M1827.8517870878945,1368.2323793166386 A700,700 0 0,1 1762.9165124598853,1525" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_7_0" startOffset="50%">Qingming</textPath>
+    </text>
+    <path d="M1200,1200 L1806.217782649107,1550 A700,700 0 0,1 1694.9747468305832,1694.9747468305832 Z" fill="#4E784E"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_8_0" d="M1762.9165124598853,1525 A700,700 0 0,1 1659.619407771256,1659.6194077712557" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_8_0" startOffset="50%">Guyu</textPath>
+    </text>
+    <path d="M1200,1200 L1694.9747468305832,1694.9747468305832 A700,700 0 0,1 1550,1806.217782649107 Z" fill="#C85250"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_9_0" d="M1659.619407771256,1659.6194077712557 A700,700 0 0,1 1525,1762.916512459885" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_9_0" startOffset="50%">Lixia</textPath>
+    </text>
+    <path d="M1200,1200 L1550,1806.217782649107 A700,700 0 0,1 1381.1733315717645,1876.148078402348 Z" fill="#C85250"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_10_0" d="M1525,1762.916512459885 A700,700 0 0,1 1368.2323793166386,1827.8517870878945" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_10_0" startOffset="50%">Xiaoman</textPath>
+    </text>
+    <path d="M1200,1200 L1381.1733315717645,1876.148078402348 A700,700 0 0,1 1200,1900 Z" fill="#C85250" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_11_0" d="M1368.2323793166386,1827.8517870878945 A700,700 0 0,1 1200,1850" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_11_0" startOffset="50%">Mangzhong</textPath>
+    </text>
+    <path d="M1200,1200 L1200,1900 A700,700 0 0,1 1018.8266684282354,1876.148078402348 Z" fill="#C85250" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_12_0" d="M1200,1850 A700,700 0 0,1 1031.7676206833614,1827.8517870878945" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_12_0" startOffset="50%">Xiazhi</textPath>
+    </text>
+    <path d="M1200,1200 L1018.8266684282354,1876.148078402348 A700,700 0 0,1 850.0000000000002,1806.217782649107 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_13_0"
+      d="M1031.7676206833614,1827.8517870878945 A700,700 0 0,1 875.0000000000002,1762.9165124598853" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_13_0" startOffset="50%">Xiaoshu</textPath>
+    </text>
+    <path d="M1200,1200 L850.0000000000002,1806.217782649107 A700,700 0 0,1 705.0252531694168,1694.9747468305832 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_14_0" d="M875.0000000000002,1762.9165124598853 A700,700 0 0,1 740.3805922287441,1659.619407771256"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc700_14_0" startOffset="50%">Dashu</textPath>
+    </text>
+    <path d="M1200,1200 L705.0252531694168,1694.9747468305832 A700,700 0 0,1 593.7822173508929,1550 Z" fill="#D9D9D9"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_15_0" d="M740.3805922287441,1659.619407771256 A700,700 0 0,1 637.0834875401148,1525" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_15_0" startOffset="50%">Liqiu</textPath>
+    </text>
+    <path d="M1200,1200 L593.7822173508929,1550 A700,700 0 0,1 523.8519215976522,1381.1733315717647 Z" fill="#D9D9D9"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_16_0" d="M637.0834875401148,1525 A700,700 0 0,1 572.1482129121057,1368.2323793166386" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_16_0" startOffset="50%">Chushu</textPath>
+    </text>
+    <path d="M1200,1200 L523.8519215976522,1381.1733315717647 A700,700 0 0,1 500,1200 Z" fill="#D9D9D9" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_17_0" d="M572.1482129121057,1368.2323793166386 A700,700 0 0,1 550,1200" fill="none" stroke="none">
+    </path><text>
+      <textPath href="#arc700_17_0" startOffset="50%">Bailu</textPath>
+    </text>
+    <path d="M1200,1200 L500,1200 A700,700 0 0,1 523.8519215976521,1018.8266684282357 Z" fill="#D9D9D9" stroke="#0ff"
+      stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_18_0" d="M550,1200 A700,700 0 0,1 572.1482129121056,1031.7676206833617" fill="none" stroke="none">
+    </path><text>
+      <textPath href="#arc700_18_0" startOffset="50%">Qiufen</textPath>
+    </text>
+    <path d="M1200,1200 L523.8519215976521,1018.8266684282357 A700,700 0 0,1 593.782217350893,850 Z" fill="#D9D9D9"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_19_0" d="M572.1482129121056,1031.7676206833617 A700,700 0 0,1 637.0834875401149,875" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_19_0" startOffset="50%">Hanlu</textPath>
+    </text>
+    <path d="M1200,1200 L593.782217350893,850 A700,700 0 0,1 705.0252531694166,705.0252531694168 Z" fill="#D9D9D9"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_20_0" d="M637.0834875401149,875 A700,700 0 0,1 740.380592228744,740.3805922287441" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_20_0" startOffset="50%">Shuangjang</textPath>
+    </text>
+    <path d="M1200,1200 L705.0252531694166,705.0252531694168 A700,700 0 0,1 849.9999999999998,593.7822173508931 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_21_0" d="M740.380592228744,740.3805922287441 A700,700 0 0,1 874.9999999999998,637.083487540115"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc700_21_0" startOffset="50%">Lidong</textPath>
+    </text>
+    <path d="M1200,1200 L849.9999999999998,593.7822173508931 A700,700 0 0,1 1018.8266684282355,523.8519215976522 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_22_0" d="M874.9999999999998,637.083487540115 A700,700 0 0,1 1031.7676206833617,572.1482129121056"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc700_22_0" startOffset="50%">Xiaoxue</textPath>
+    </text>
+    <path d="M1200,1200 L1018.8266684282355,523.8519215976522 A700,700 0 0,1 1199.9999999999998,500 Z" fill="#2D3F67"
+      stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc700_23_0" d="M1031.7676206833617,572.1482129121056 A700,700 0 0,1 1199.9999999999998,550" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc700_23_0" startOffset="50%">Daxue</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="600" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1044.7085729384876,620.444504226559 A600,600 0 0,1 1355.2914270615124,620.444504226559 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_0_0" d="M1057.6495251936135,668.7407955410124 A600,600 0 0,1 1342.3504748063865,668.7407955410124"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_0_0" startOffset="50%">Mouse</textPath>
+    </text>
+    <path id="arc600_0_1" d="M1065.414096546689,697.7185703296846 A600,600 0 0,1 1334.5859034533107,697.7185703296846"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_0_1" startOffset="50%">🐁</textPath>
+    </text>
+    <path id="arc600_0_2" d="M1049.884953840538,639.7630207523404 A600,600 0 0,1 1350.115046159462,639.7630207523404"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_0_2" startOffset="50%">䷗</textPath>
+    </text>
+    <path d="M1200,1200 L1355.2914270615124,620.444504226559 A600,600 0 0,1 1624.2640687119285,775.7359312880715 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_1_0" d="M1342.3504748063865,668.7407955410124 A600,600 0 0,1 1588.908729652601,811.0912703473989"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_1_0" startOffset="50%">Buffalo</textPath>
+    </text>
+    <path id="arc600_1_1" d="M1334.5859034533107,697.7185703296846 A600,600 0 0,1 1567.6955262170047,832.3044737829953"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_1_1" startOffset="50%">🐃</textPath>
+    </text>
+    <path id="arc600_1_2" d="M1350.115046159462,639.7630207523404 A600,600 0 0,1 1610.1219330881977,789.8780669118025"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_1_2" startOffset="50%">䷒</textPath>
+    </text>
+    <path d="M1200,1200 L1624.2640687119285,775.7359312880715 A600,600 0 0,1 1779.555495773441,1044.7085729384876 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_2_0" d="M1588.908729652601,811.0912703473989 A600,600 0 0,1 1731.2592044589876,1057.6495251936135"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_2_0" startOffset="50%">Tiger</textPath>
+    </text>
+    <path id="arc600_2_1" d="M1567.6955262170047,832.3044737829953 A600,600 0 0,1 1702.2814296703154,1065.4140965466893"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_2_1" startOffset="50%">🐅</textPath>
+    </text>
+    <path id="arc600_2_2" d="M1610.1219330881977,789.8780669118025 A600,600 0 0,1 1760.2369792476597,1049.884953840538"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_2_2" startOffset="50%">䷊</textPath>
+    </text>
+    <path d="M1200,1200 L1779.555495773441,1044.7085729384876 A600,600 0 0,1 1779.555495773441,1355.2914270615124 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_3_0"
+      d="M1731.2592044589876,1057.6495251936135 A600,600 0 0,1 1731.2592044589876,1342.3504748063865" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc600_3_0" startOffset="50%">Cat</textPath>
+    </text>
+    <path id="arc600_3_1"
+      d="M1702.2814296703154,1065.4140965466893 A600,600 0 0,1 1702.2814296703154,1334.5859034533107" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc600_3_1" startOffset="50%">🐈</textPath>
+    </text>
+    <path id="arc600_3_2" d="M1760.2369792476597,1049.884953840538 A600,600 0 0,1 1760.2369792476597,1350.115046159462"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_3_2" startOffset="50%">䷡</textPath>
+    </text>
+    <path d="M1200,1200 L1779.555495773441,1355.2914270615124 A600,600 0 0,1 1624.2640687119285,1624.2640687119285 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_4_0" d="M1731.2592044589876,1342.3504748063865 A600,600 0 0,1 1588.908729652601,1588.908729652601"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_4_0" startOffset="50%">Dragon</textPath>
+    </text>
+    <path id="arc600_4_1"
+      d="M1702.2814296703154,1334.5859034533107 A600,600 0 0,1 1567.6955262170047,1567.6955262170047" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc600_4_1" startOffset="50%">🐉</textPath>
+    </text>
+    <path id="arc600_4_2" d="M1760.2369792476597,1350.115046159462 A600,600 0 0,1 1610.1219330881977,1610.1219330881975"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_4_2" startOffset="50%">䷪</textPath>
+    </text>
+    <path d="M1200,1200 L1624.2640687119285,1624.2640687119285 A600,600 0 0,1 1355.2914270615124,1779.555495773441 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_5_0" d="M1588.908729652601,1588.908729652601 A600,600 0 0,1 1342.3504748063865,1731.2592044589876"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_5_0" startOffset="50%">Snake</textPath>
+    </text>
+    <path id="arc600_5_1"
+      d="M1567.6955262170047,1567.6955262170047 A600,600 0 0,1 1334.5859034533107,1702.2814296703154" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc600_5_1" startOffset="50%">🐍</textPath>
+    </text>
+    <path id="arc600_5_2" d="M1610.1219330881977,1610.1219330881975 A600,600 0 0,1 1350.115046159462,1760.2369792476597"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_5_2" startOffset="50%">䷀</textPath>
+    </text>
+    <path d="M1200,1200 L1355.2914270615124,1779.555495773441 A600,600 0 0,1 1044.7085729384876,1779.555495773441 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_6_0"
+      d="M1342.3504748063865,1731.2592044589876 A600,600 0 0,1 1057.6495251936135,1731.2592044589876" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc600_6_0" startOffset="50%">Horse</textPath>
+    </text>
+    <path id="arc600_6_1" d="M1334.5859034533107,1702.2814296703154 A600,600 0 0,1 1065.414096546689,1702.2814296703154"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_6_1" startOffset="50%">🐎</textPath>
+    </text>
+    <path id="arc600_6_2" d="M1350.115046159462,1760.2369792476597 A600,600 0 0,1 1049.884953840538,1760.2369792476597"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_6_2" startOffset="50%">䷫</textPath>
+    </text>
+    <path d="M1200,1200 L1044.7085729384876,1779.555495773441 A600,600 0 0,1 775.7359312880715,1624.2640687119285 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_7_0" d="M1057.6495251936135,1731.2592044589876 A600,600 0 0,1 811.0912703473989,1588.908729652601"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_7_0" startOffset="50%">Goat</textPath>
+    </text>
+    <path id="arc600_7_1" d="M1065.414096546689,1702.2814296703154 A600,600 0 0,1 832.3044737829953,1567.6955262170047"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_7_1" startOffset="50%">🐐</textPath>
+    </text>
+    <path id="arc600_7_2" d="M1049.884953840538,1760.2369792476597 A600,600 0 0,1 789.8780669118025,1610.1219330881977"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_7_2" startOffset="50%">䷠</textPath>
+    </text>
+    <path d="M1200,1200 L775.7359312880715,1624.2640687119285 A600,600 0 0,1 620.444504226559,1355.2914270615126 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_8_0" d="M811.0912703473989,1588.908729652601 A600,600 0 0,1 668.7407955410125,1342.3504748063865"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_8_0" startOffset="50%">Monkey</textPath>
+    </text>
+    <path id="arc600_8_1" d="M832.3044737829953,1567.6955262170047 A600,600 0 0,1 697.7185703296846,1334.585903453311"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_8_1" startOffset="50%">🐒</textPath>
+    </text>
+    <path id="arc600_8_2" d="M789.8780669118025,1610.1219330881977 A600,600 0 0,1 639.7630207523405,1350.1150461594623"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_8_2" startOffset="50%">䷋</textPath>
+    </text>
+    <path d="M1200,1200 L620.444504226559,1355.2914270615126 A600,600 0 0,1 620.4445042265589,1044.7085729384878 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_9_0" d="M668.7407955410125,1342.3504748063865 A600,600 0 0,1 668.7407955410124,1057.6495251936137"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_9_0" startOffset="50%">Rooster</textPath>
+    </text>
+    <path id="arc600_9_1" d="M697.7185703296846,1334.585903453311 A600,600 0 0,1 697.7185703296844,1065.4140965466895"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_9_1" startOffset="50%">🐓</textPath>
+    </text>
+    <path id="arc600_9_2" d="M639.7630207523405,1350.1150461594623 A600,600 0 0,1 639.7630207523404,1049.8849538405382"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_9_2" startOffset="50%">䷓</textPath>
+    </text>
+    <path d="M1200,1200 L620.4445042265589,1044.7085729384878 A600,600 0 0,1 775.7359312880715,775.7359312880715 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_10_0" d="M668.7407955410124,1057.6495251936137 A600,600 0 0,1 811.0912703473988,811.0912703473989"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_10_0" startOffset="50%">Dog</textPath>
+    </text>
+    <path id="arc600_10_1" d="M697.7185703296844,1065.4140965466895 A600,600 0 0,1 832.3044737829953,832.3044737829953"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_10_1" startOffset="50%">🐕</textPath>
+    </text>
+    <path id="arc600_10_2" d="M639.7630207523404,1049.8849538405382 A600,600 0 0,1 789.8780669118023,789.8780669118025"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_10_2" startOffset="50%">䷖</textPath>
+    </text>
+    <path d="M1200,1200 L775.7359312880715,775.7359312880715 A600,600 0 0,1 1044.7085729384876,620.444504226559 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc600_11_0" d="M811.0912703473988,811.0912703473989 A600,600 0 0,1 1057.6495251936137,668.7407955410124"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_11_0" startOffset="50%">Pig</textPath>
+    </text>
+    <path id="arc600_11_1" d="M832.3044737829953,832.3044737829953 A600,600 0 0,1 1065.4140965466893,697.7185703296846"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_11_1" startOffset="50%">🐖</textPath>
+    </text>
+    <path id="arc600_11_2" d="M789.8780669118023,789.8780669118025 A600,600 0 0,1 1049.884953840538,639.7630207523404"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc600_11_2" startOffset="50%">䷁</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="500" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1070.5904774487396,717.0370868554658 A500,500 0 0,1 1329.4095225512604,717.0370868554658 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_0_0" d="M1083.5314297038656,765.3333781699193 A500,500 0 0,1 1316.4685702961344,765.3333781699193"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_0_0" startOffset="50%">Aquarius</textPath>
+    </text>
+    <path id="arc500_0_1" d="M1091.2960010569413,794.3111529585913 A500,500 0 0,1 1308.7039989430587,794.3111529585913"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_0_1" startOffset="50%">♒</textPath>
+    </text>
+    <path d="M1200,1200 L1329.4095225512604,717.0370868554658 A500,500 0 0,1 1553.553390593274,846.4466094067263 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_1_0" d="M1316.4685702961344,765.3333781699193 A500,500 0 0,1 1518.1980515339465,881.8019484660537"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_1_0" startOffset="50%">Capricorn</textPath>
+    </text>
+    <path id="arc500_1_1" d="M1308.7039989430587,794.3111529585913 A500,500 0 0,1 1496.98484809835,903.0151519016501"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_1_1" startOffset="50%">♑</textPath>
+    </text>
+    <path d="M1200,1200 L1553.553390593274,846.4466094067263 A500,500 0 0,1 1682.9629131445342,1070.5904774487396 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_2_0" d="M1518.1980515339465,881.8019484660537 A500,500 0 0,1 1634.6666218300807,1083.5314297038656"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_2_0" startOffset="50%">Sagittarius</textPath>
+    </text>
+    <path id="arc500_2_1" d="M1496.98484809835,903.0151519016501 A500,500 0 0,1 1605.6888470414087,1091.2960010569413"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_2_1" startOffset="50%">♐️</textPath>
+    </text>
+    <path d="M1200,1200 L1682.9629131445342,1070.5904774487396 A500,500 0 0,1 1682.9629131445342,1329.4095225512604 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_3_0"
+      d="M1634.6666218300807,1083.5314297038656 A500,500 0 0,1 1634.6666218300807,1316.4685702961344" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_3_0" startOffset="50%">Scorpio</textPath>
+    </text>
+    <path id="arc500_3_1"
+      d="M1605.6888470414087,1091.2960010569413 A500,500 0 0,1 1605.6888470414087,1308.7039989430587" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_3_1" startOffset="50%">♏️</textPath>
+    </text>
+    <path d="M1200,1200 L1682.9629131445342,1329.4095225512604 A500,500 0 0,1 1553.553390593274,1553.5533905932737 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_4_0"
+      d="M1634.6666218300807,1316.4685702961344 A500,500 0 0,1 1518.1980515339465,1518.1980515339465" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_4_0" startOffset="50%">Libra</textPath>
+    </text>
+    <path id="arc500_4_1" d="M1605.6888470414087,1308.7039989430587 A500,500 0 0,1 1496.98484809835,1496.9848480983499"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_4_1" startOffset="50%">♎️</textPath>
+    </text>
+    <path d="M1200,1200 L1553.553390593274,1553.5533905932737 A500,500 0 0,1 1329.4095225512604,1682.9629131445342 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_5_0"
+      d="M1518.1980515339465,1518.1980515339465 A500,500 0 0,1 1316.4685702961344,1634.6666218300807" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_5_0" startOffset="50%">Virgo</textPath>
+    </text>
+    <path id="arc500_5_1" d="M1496.98484809835,1496.9848480983499 A500,500 0 0,1 1308.7039989430587,1605.6888470414087"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_5_1" startOffset="50%">♍️</textPath>
+    </text>
+    <path d="M1200,1200 L1329.4095225512604,1682.9629131445342 A500,500 0 0,1 1070.5904774487396,1682.9629131445342 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_6_0"
+      d="M1316.4685702961344,1634.6666218300807 A500,500 0 0,1 1083.5314297038656,1634.6666218300807" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_6_0" startOffset="50%">Leo</textPath>
+    </text>
+    <path id="arc500_6_1"
+      d="M1308.7039989430587,1605.6888470414087 A500,500 0 0,1 1091.2960010569413,1605.6888470414087" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc500_6_1" startOffset="50%">♌️</textPath>
+    </text>
+    <path d="M1200,1200 L1070.5904774487396,1682.9629131445342 A500,500 0 0,1 846.4466094067263,1553.553390593274 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_7_0" d="M1083.5314297038656,1634.6666218300807 A500,500 0 0,1 881.8019484660537,1518.1980515339465"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_7_0" startOffset="50%">Cancer</textPath>
+    </text>
+    <path id="arc500_7_1" d="M1091.2960010569413,1605.6888470414087 A500,500 0 0,1 903.0151519016501,1496.98484809835"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_7_1" startOffset="50%">♋️</textPath>
+    </text>
+    <path d="M1200,1200 L846.4466094067263,1553.553390593274 A500,500 0 0,1 717.0370868554659,1329.4095225512606 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_8_0" d="M881.8019484660537,1518.1980515339465 A500,500 0 0,1 765.3333781699193,1316.4685702961344"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_8_0" startOffset="50%">Gemini</textPath>
+    </text>
+    <path id="arc500_8_1" d="M903.0151519016501,1496.98484809835 A500,500 0 0,1 794.3111529585914,1308.7039989430589"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_8_1" startOffset="50%">♊️</textPath>
+    </text>
+    <path d="M1200,1200 L717.0370868554659,1329.4095225512606 A500,500 0 0,1 717.0370868554658,1070.5904774487399 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_9_0" d="M765.3333781699193,1316.4685702961344 A500,500 0 0,1 765.3333781699192,1083.5314297038658"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_9_0" startOffset="50%">Taurus</textPath>
+    </text>
+    <path id="arc500_9_1" d="M794.3111529585914,1308.7039989430589 A500,500 0 0,1 794.3111529585913,1091.2960010569413"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_9_1" startOffset="50%">♉️</textPath>
+    </text>
+    <path d="M1200,1200 L717.0370868554658,1070.5904774487399 A500,500 0 0,1 846.4466094067261,846.4466094067263 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_10_0" d="M765.3333781699192,1083.5314297038658 A500,500 0 0,1 881.8019484660535,881.8019484660537"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_10_0" startOffset="50%">Aries</textPath>
+    </text>
+    <path id="arc500_10_1" d="M794.3111529585913,1091.2960010569413 A500,500 0 0,1 903.0151519016499,903.0151519016501"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_10_1" startOffset="50%">♈️</textPath>
+    </text>
+    <path d="M1200,1200 L846.4466094067261,846.4466094067263 A500,500 0 0,1 1070.5904774487396,717.0370868554658 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc500_11_0" d="M881.8019484660535,881.8019484660537 A500,500 0 0,1 1083.5314297038658,765.3333781699193"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_11_0" startOffset="50%">Pisces</textPath>
+    </text>
+    <path id="arc500_11_1" d="M903.0151519016499,903.0151519016501 A500,500 0 0,1 1091.2960010569413,794.3111529585913"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc500_11_1" startOffset="50%">♓</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="400" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1046.926627053964,830.4481869954852 A400,400 0 0,1 1353.073372946036,830.4481869954852 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_0_0" d="M1066.0607986722187,876.6421636210496 A400,400 0 0,1 1333.9392013277813,876.6421636210496"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_0_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc400_0_1" d="M1077.5413016431712,904.3585495963882 A400,400 0 0,1 1322.4586983568288,904.3585495963882"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_0_1" startOffset="50%">☵</textPath>
+    </text>
+    <path id="arc400_0_2" d="M1054.5802957012659,848.925777645711 A400,400 0 0,1 1345.4197042987341,848.925777645711"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_0_2" startOffset="50%">1️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L1353.073372946036,830.4481869954852 A400,400 0 0,1 1569.5518130045148,1046.926627053964 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_1_0" d="M1333.9392013277813,876.6421636210496 A400,400 0 0,1 1523.3578363789504,1066.0607986722187"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_1_0" startOffset="50%">Mountain</textPath>
+    </text>
+    <path id="arc400_1_1" d="M1322.4586983568288,904.3585495963882 A400,400 0 0,1 1495.6414504036118,1077.5413016431712"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_1_1" startOffset="50%">☶</textPath>
+    </text>
+    <path id="arc400_1_2" d="M1345.4197042987341,848.925777645711 A400,400 0 0,1 1551.0742223542888,1054.5802957012659"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_1_2" startOffset="50%">8️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L1569.5518130045148,1046.926627053964 A400,400 0 0,1 1569.5518130045148,1353.073372946036 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_2_0"
+      d="M1523.3578363789504,1066.0607986722187 A400,400 0 0,1 1523.3578363789504,1333.9392013277813" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_2_0" startOffset="50%">Thunder</textPath>
+    </text>
+    <path id="arc400_2_1"
+      d="M1495.6414504036118,1077.5413016431712 A400,400 0 0,1 1495.6414504036118,1322.4586983568288" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_2_1" startOffset="50%">☳</textPath>
+    </text>
+    <path id="arc400_2_2"
+      d="M1551.0742223542888,1054.5802957012659 A400,400 0 0,1 1551.0742223542888,1345.4197042987341" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_2_2" startOffset="50%">3️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L1569.5518130045148,1353.073372946036 A400,400 0 0,1 1353.073372946036,1569.5518130045148 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_3_0"
+      d="M1523.3578363789504,1333.9392013277813 A400,400 0 0,1 1333.9392013277813,1523.3578363789504" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_3_0" startOffset="50%">Wind</textPath>
+    </text>
+    <path id="arc400_3_1"
+      d="M1495.6414504036118,1322.4586983568288 A400,400 0 0,1 1322.4586983568288,1495.6414504036118" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_3_1" startOffset="50%">☴</textPath>
+    </text>
+    <path id="arc400_3_2"
+      d="M1551.0742223542888,1345.4197042987341 A400,400 0 0,1 1345.4197042987341,1551.0742223542888" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_3_2" startOffset="50%">4️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L1353.073372946036,1569.5518130045148 A400,400 0 0,1 1046.926627053964,1569.5518130045148 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_4_0"
+      d="M1333.9392013277813,1523.3578363789504 A400,400 0 0,1 1066.0607986722187,1523.3578363789504" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_4_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc400_4_1"
+      d="M1322.4586983568288,1495.6414504036118 A400,400 0 0,1 1077.5413016431712,1495.6414504036118" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_4_1" startOffset="50%">☲</textPath>
+    </text>
+    <path id="arc400_4_2"
+      d="M1345.4197042987341,1551.0742223542888 A400,400 0 0,1 1054.5802957012659,1551.0742223542888" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc400_4_2" startOffset="50%">9️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L1046.926627053964,1569.5518130045148 A400,400 0 0,1 830.4481869954852,1353.073372946036 Z"
+      fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_5_0" d="M1066.0607986722187,1523.3578363789504 A400,400 0 0,1 876.6421636210496,1333.9392013277816"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_5_0" startOffset="50%">Earth</textPath>
+    </text>
+    <path id="arc400_5_1" d="M1077.5413016431712,1495.6414504036118 A400,400 0 0,1 904.3585495963882,1322.4586983568288"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_5_1" startOffset="50%">☷</textPath>
+    </text>
+    <path id="arc400_5_2" d="M1054.5802957012659,1551.0742223542888 A400,400 0 0,1 848.925777645711,1345.4197042987341"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_5_2" startOffset="50%">2️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L830.4481869954852,1353.073372946036 A400,400 0 0,1 830.4481869954852,1046.9266270539642 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_6_0" d="M876.6421636210496,1333.9392013277816 A400,400 0 0,1 876.6421636210496,1066.0607986722189"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_6_0" startOffset="50%">Lake</textPath>
+    </text>
+    <path id="arc400_6_1" d="M904.3585495963882,1322.4586983568288 A400,400 0 0,1 904.3585495963882,1077.5413016431714"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_6_1" startOffset="50%">☱</textPath>
+    </text>
+    <path id="arc400_6_2" d="M848.925777645711,1345.4197042987341 A400,400 0 0,1 848.9257776457109,1054.580295701266"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_6_2" startOffset="50%">7️⃣</textPath>
+    </text>
+    <path d="M1200,1200 L830.4481869954852,1046.9266270539642 A400,400 0 0,1 1046.9266270539642,830.4481869954852 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc400_7_0" d="M876.6421636210496,1066.0607986722189 A400,400 0 0,1 1066.0607986722187,876.6421636210496"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_7_0" startOffset="50%">Heaven</textPath>
+    </text>
+    <path id="arc400_7_1" d="M904.3585495963882,1077.5413016431714 A400,400 0 0,1 1077.5413016431714,904.3585495963882"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_7_1" startOffset="50%">☰</textPath>
+    </text>
+    <path id="arc400_7_2" d="M848.9257776457109,1054.580295701266 A400,400 0 0,1 1054.580295701266,848.9257776457109"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc400_7_2" startOffset="50%">6️⃣</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="300" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1085.194970290473,922.8361402466139 A300,300 0 0,1 1314.805029709527,922.8361402466139 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_0_0" d="M1104.3291419087275,969.0301168721783 A300,300 0 0,1 1295.6708580912725,969.0301168721783"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_0_0" startOffset="50%">Rest</textPath>
+    </text>
+    <path id="arc300_0_1" d="M1115.8096448796803,996.7465028475169 A300,300 0 0,1 1284.1903551203197,996.7465028475169"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_0_1" startOffset="50%">(Snake)</textPath>
+    </text>
+    <path d="M1200,1200 L1314.805029709527,922.8361402466139 A300,300 0 0,1 1477.163859753386,1085.194970290473 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_1_0" d="M1295.6708580912725,969.0301168721783 A300,300 0 0,1 1430.9698831278217,1104.3291419087275"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_1_0" startOffset="50%">Life</textPath>
+    </text>
+    <path id="arc300_1_1" d="M1284.1903551203197,996.7465028475169 A300,300 0 0,1 1403.253497152483,1115.8096448796803"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_1_1" startOffset="50%">(Cloud)</textPath>
+    </text>
+    <path d="M1200,1200 L1477.163859753386,1085.194970290473 A300,300 0 0,1 1477.163859753386,1314.805029709527 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_2_0"
+      d="M1430.9698831278217,1104.3291419087275 A300,300 0 0,1 1430.9698831278217,1295.6708580912725" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc300_2_0" startOffset="50%">Harm</textPath>
+    </text>
+    <path id="arc300_2_1" d="M1403.253497152483,1115.8096448796803 A300,300 0 0,1 1403.253497152483,1284.1903551203197"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_2_1" startOffset="50%">(Dragon)</textPath>
+    </text>
+    <path d="M1200,1200 L1477.163859753386,1314.805029709527 A300,300 0 0,1 1314.805029709527,1477.163859753386 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_3_0"
+      d="M1430.9698831278217,1295.6708580912725 A300,300 0 0,1 1295.6708580912725,1430.9698831278217" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc300_3_0" startOffset="50%">Block</textPath>
+    </text>
+    <path id="arc300_3_1" d="M1403.253497152483,1284.1903551203197 A300,300 0 0,1 1284.1903551203197,1403.253497152483"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_3_1" startOffset="50%">(Wind)</textPath>
+    </text>
+    <path d="M1200,1200 L1314.805029709527,1477.163859753386 A300,300 0 0,1 1085.194970290473,1477.163859753386 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_4_0"
+      d="M1295.6708580912725,1430.9698831278217 A300,300 0 0,1 1104.3291419087275,1430.9698831278217" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc300_4_0" startOffset="50%">Scenery</textPath>
+    </text>
+    <path id="arc300_4_1" d="M1284.1903551203197,1403.253497152483 A300,300 0 0,1 1115.8096448796803,1403.253497152483"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_4_1" startOffset="50%">(Bird)</textPath>
+    </text>
+    <path d="M1200,1200 L1085.194970290473,1477.163859753386 A300,300 0 0,1 922.8361402466139,1314.805029709527 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_5_0" d="M1104.3291419087275,1430.9698831278217 A300,300 0 0,1 969.0301168721783,1295.6708580912725"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_5_0" startOffset="50%">Death</textPath>
+    </text>
+    <path id="arc300_5_1" d="M1115.8096448796803,1403.253497152483 A300,300 0 0,1 996.7465028475169,1284.1903551203197"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_5_1" startOffset="50%">(Earth)</textPath>
+    </text>
+    <path d="M1200,1200 L922.8361402466139,1314.805029709527 A300,300 0 0,1 922.8361402466139,1085.1949702904733 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_6_0" d="M969.0301168721783,1295.6708580912725 A300,300 0 0,1 969.0301168721783,1104.3291419087277"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_6_0" startOffset="50%">Shock</textPath>
+    </text>
+    <path id="arc300_6_1" d="M996.7465028475169,1284.1903551203197 A300,300 0 0,1 996.7465028475169,1115.8096448796805"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_6_1" startOffset="50%">(Tiger)</textPath>
+    </text>
+    <path d="M1200,1200 L922.8361402466139,1085.1949702904733 A300,300 0 0,1 1085.194970290473,922.8361402466139 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc300_7_0" d="M969.0301168721783,1104.3291419087277 A300,300 0 0,1 1104.3291419087277,969.0301168721783"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_7_0" startOffset="50%">Open</textPath>
+    </text>
+    <path id="arc300_7_1" d="M996.7465028475169,1115.8096448796805 A300,300 0 0,1 1115.8096448796803,996.7465028475169"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc300_7_1" startOffset="50%">(Heaven)</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="200" fill="none" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle>
+    <path d="M1200,1200 L1058.5786437626905,1058.5786437626905 A200,200 0 0,1 1341.4213562373095,1058.5786437626905 Z"
+      fill="#2D3F67" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc200_0_0" d="M1093.933982822018,1093.933982822018 A200,200 0 0,1 1306.066017177982,1093.933982822018"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc200_0_0" startOffset="50%">Water</textPath>
+    </text>
+    <path id="arc200_0_1"
+      d="M1115.1471862576143,1115.1471862576143 A200,200 0 0,1 1284.8528137423857,1115.1471862576143" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_0_1" startOffset="50%">水</textPath>
+    </text>
+    <path id="arc200_0_2"
+      d="M1072.7207793864216,1072.7207793864213 A200,200 0 0,1 1327.2792206135787,1072.7207793864216" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_0_2" startOffset="50%">☿</textPath>
+    </text>
+    <path d="M1200,1200 L1341.4213562373095,1058.5786437626905 A200,200 0 0,1 1341.4213562373095,1341.4213562373095 Z"
+      fill="#4E784E" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc200_1_0" d="M1306.066017177982,1093.933982822018 A200,200 0 0,1 1306.066017177982,1306.066017177982"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc200_1_0" startOffset="50%">Wood</textPath>
+    </text>
+    <path id="arc200_1_1"
+      d="M1284.8528137423857,1115.1471862576143 A200,200 0 0,1 1284.8528137423857,1284.8528137423857" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_1_1" startOffset="50%">木</textPath>
+    </text>
+    <path id="arc200_1_2"
+      d="M1327.2792206135787,1072.7207793864216 A200,200 0 0,1 1327.2792206135787,1327.2792206135784" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_1_2" startOffset="50%">♃</textPath>
+    </text>
+    <path d="M1200,1200 L1341.4213562373095,1341.4213562373095 A200,200 0 0,1 1058.5786437626905,1341.4213562373095 Z"
+      fill="#C85250" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc200_2_0" d="M1306.066017177982,1306.066017177982 A200,200 0 0,1 1093.933982822018,1306.066017177982"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc200_2_0" startOffset="50%">Fire</textPath>
+    </text>
+    <path id="arc200_2_1"
+      d="M1284.8528137423857,1284.8528137423857 A200,200 0 0,1 1115.1471862576143,1284.8528137423857" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_2_1" startOffset="50%">火</textPath>
+    </text>
+    <path id="arc200_2_2"
+      d="M1327.2792206135787,1327.2792206135784 A200,200 0 0,1 1072.7207793864216,1327.2792206135787" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_2_2" startOffset="50%">♂</textPath>
+    </text>
+    <path d="M1200,1200 L1058.5786437626905,1341.4213562373095 A200,200 0 0,1 1058.5786437626905,1058.5786437626905 Z"
+      fill="#D9D9D9" stroke="#0ff" stroke-width="3" filter="url(#glow)"></path>
+    <path id="arc200_3_0" d="M1093.933982822018,1306.066017177982 A200,200 0 0,1 1093.933982822018,1093.933982822018"
+      fill="none" stroke="none"></path><text>
+      <textPath href="#arc200_3_0" startOffset="50%">Metal</textPath>
+    </text>
+    <path id="arc200_3_1"
+      d="M1115.1471862576143,1284.8528137423857 A200,200 0 0,1 1115.1471862576143,1115.1471862576143" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_3_1" startOffset="50%">金</textPath>
+    </text>
+    <path id="arc200_3_2"
+      d="M1072.7207793864216,1327.2792206135787 A200,200 0 0,1 1072.7207793864213,1072.7207793864216" fill="none"
+      stroke="none"></path><text>
+      <textPath href="#arc200_3_2" startOffset="50%">♀</textPath>
+    </text>
+    <circle cx="1200" cy="1200" r="80" fill="#E3A857" stroke="#0ff" stroke-width="3" filter="url(#glow)"></circle><text
+      x="1200" y="1200">Earth</text><text x="1200" y="1170">土</text><text x="1200" y="1230">♄</text>
+  </g>
+</svg>
